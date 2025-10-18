@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | Synorasol</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="./css/hero.css">
+
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-bg">
+            <div class="floating-orb orb-1"></div>
+            <div class="floating-orb orb-2"></div>
+            <div class="floating-orb orb-3"></div>
+            <div class="particles" id="particles"></div>
+        </div>
+        <div class="preloader-content">
+            <div class="preloader-logo">SYNORASOL.</div>
+            <div class="loading-text">LOADING DIGITAL EXPERIENCE</div>
+            <div class="progress-container">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+            <div class="preloader-spinner"></div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <div class="nav-container">
+        <nav>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </div>
+            <div class="logo">
+                <img src="./img/logo-01.png" alt="SynoraSol Logo" />
+            </div>
+
+            <div class="hamburger-wrapper">
+                <div class="hamburger" id="hamburger"></div>
+                <!-- Circular Text -->
+                <div class="menu-circle-text" id="menuTextCircle">
+                </div>
+            </div>
+        </nav>
+
+        <!-- Fullscreen Menu Overlay -->
+        <div class="menu-overlay" id="menuOverlay">
+            <div class="close-menu" id="closeMenu">
+            </div>
+             <ul class="menu-links">
+                <li><a href="index.html" data-number=>Home</a></li>
+                <li><a href="about-us.html" data-number=>About</a></li>
+                <li><a href="services.html" data-number=>Services</a></li>
+                <li><a href="portfolio.html" data-number=>Portfolio</a></li>
+                <li><a href="testimonial.html" data-number=>Testimonials</a></li>
+                <li><a href="contact.html" data-number=>Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+   <!-- services Page Hero -->
+    <section class="hero" id="home">
+        <div class="hero-bg"></div>
+
+        <!-- Gradient orbs -->
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+
+        <!-- Floating particles -->
+        <div class="particles" id="particles"></div>
+
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="layer solid">SynoraSol</span>
+                <span class="layer solid">Comprehensive</span>
+                <span class="layer outline">Services</span>
+            </h1>
+
+            <p class="hero-subtitle">
+               Comprehensive digital solutions designed to elevate your brand, drive growth, and deliver measurable results. </p>
+
+            <a href="contact.html" class="hero-btn">Let's Collaborate</a>
+        </div>
+
+        <div class="scroll-indicator" id="scrollIndicator">
+            <div class="mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <span class="scroll-text">Scroll</span>
+        </div>
+    </section>
+
+    <!-- Services Grid Section -->
+    <section class="servicepage-section">
+        <div class="servicepage-section-bg"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="servicepage-heading">Digital Excellence Across All Channels</h2>
+                    <p class="servicepage-text">From strategy to execution, we provide end-to-end digital solutions tailored to your unique business needs.</p>
+                </div>
+            </div>
+            <div class="servicepage-grid">
+                <!-- Web Development -->
+                <div class="servicepage-card fade-in">
+                    <div class="servicepage-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="servicepage-card-title">Web Development</h3>
+                    <p class="servicepage-card-text">Custom, high-performance websites built with cutting-edge technologies and optimized for speed, security, and conversion.</p>
+                    <ul class="servicepage-features">
+                        <li>Custom WordPress & React Development</li>
+                        <li>E-commerce Solutions</li>
+                        <li>Progressive Web Apps</li>
+                        <li>API Integration</li>
+                        <li>Performance Optimization</li>
+                    </ul>
+                    <a href="website-development-service.html" class="servicepage-cta">
+                        Learn More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Web Design -->
+                <div class="servicepage-card fade-in">
+                    <div class="servicepage-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3 class="servicepage-card-title">Web Design</h3>
+                    <p class="servicepage-card-text">Visually stunning, user-centric designs that create engaging experiences and drive user interaction and conversion.</p>
+                    <ul class="servicepage-features">
+                        <li>UI/UX Design</li>
+                        <li>Responsive Design</li>
+                        <li>Prototyping & Wireframing</li>
+                        <li>User Experience Research</li>
+                        <li>Design Systems</li>
+                    </ul>
+                    <a href="website-design-service.html" class="servicepage-cta">
+                        Learn More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- SEO & SEM -->
+                <div class="servicepage-card fade-in">
+                    <div class="servicepage-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3 class="servicepage-card-title">SEO & SEM</h3>
+                    <p class="servicepage-card-text">Data-driven strategies to improve search visibility, drive qualified traffic, and increase conversions across search engines.</p>
+                    <ul class="servicepage-features">
+                        <li>Technical SEO Audits</li>
+                        <li>Content Strategy</li>
+                        <li>Google Ads Management</li>
+                        <li>Local SEO</li>
+                        <li>Competitor Analysis</li>
+                    </ul>
+                    <a href="seo-sem-service.html" class="servicepage-cta">
+                        Learn More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Paid Advertising -->
+                <div class="servicepage-card fade-in">
+                    <div class="servicepage-icon">
+                        <i class="fas fa-ad"></i>
+                    </div>
+                    <h3 class="servicepage-card-title">Paid Advertising</h3>
+                    <p class="servicepage-card-text">Strategic ad campaigns across platforms to maximize ROI and accelerate business growth with precise targeting.</p>
+                    <ul class="servicepage-features">
+                        <li>Social Media Advertising</li>
+                        <li>PPC Campaign Management</li>
+                        <li>Retargeting Strategies</li>
+                        <li>Conversion Tracking</li>
+                        <li>A/B Testing</li>
+                    </ul>
+                    <a href="#" class="servicepage-cta">
+                        Learn More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Social Media Marketing -->
+                <div class="servicepage-card fade-in">
+                    <div class="servicepage-icon">
+                        <i class="fas fa-hashtag"></i>
+                    </div>
+                    <h3 class="servicepage-card-title">Social Media Marketing</h3>
+                    <p class="servicepage-card-text">Engaging content and strategic campaigns to build brand presence and connect with your audience across platforms.</p>
+                    <ul class="servicepage-features">
+                        <li>Content Strategy & Creation</li>
+                        <li>Community Management</li>
+                        <li>Influencer Partnerships</li>
+                        <li>Social Media Analytics</li>
+                        <li>Crisis Management</li>
+                    </ul>
+                    <a href="social-media-marketing-service.html" class="servicepage-cta">
+                        Learn More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Graphic Design -->
+                <div class="servicepage-card fade-in">
+                    <div class="servicepage-icon">
+                        <i class="fas fa-pencil-alt"></i>
+                    </div>
+                    <h3 class="servicepage-card-title">Graphic Design</h3>
+                    <p class="servicepage-card-text">Captivating visual identities and marketing materials that communicate your brand story effectively across all touchpoints.</p>
+                    <ul class="servicepage-features">
+                        <li>Brand Identity Design</li>
+                        <li>Marketing Collateral</li>
+                        <li>Infographic Design</li>
+                        <li>Print Design</li>
+                        <li>Brand Guidelines</li>
+                    </ul>
+                    <a href="graphic-design-service.html" class="servicepage-cta">
+                        Learn More <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio1-section">
+        <div class="container">
+            <p class="section-subtitle">Creatives Catalogue</p>
+            <h2 class="section-title">View Our Portfolio & More!</h2>
+
+            <div class="portfolio1-slider">
+                <div class="portfolio1-track">
+                    <!-- Portfolio Items -->
+                    <div class="portfolio1-item">
+                        <img src="https://i.pinimg.com/1200x/45/c0/f2/45c0f249ece7248c4d562b51a0639822.jpg"
+                            alt="Portfolio 1">
+                    </div>
+                    <div class="portfolio1-item">
+                        <img src="https://i.pinimg.com/1200x/00/20/24/002024d7eb7c8babc9437b2ccdd712d2.jpg"
+                            alt="Portfolio 2">
+                    </div>
+                    <div class="portfolio1-item">
+                        <img src="https://i.pinimg.com/1200x/c0/dd/3d/c0dd3ddb63eae4bfa614a9543c434fa4.jpg"
+                            alt="Portfolio 3">
+                    </div>
+                    <div class="portfolio1-item">
+                        <img src="https://i.pinimg.com/736x/b7/17/de/b717de8bbbcb46b3d7af834672c72a84.jpg"
+                            alt="Portfolio 4">
+                    </div>
+                    <div class="portfolio1-item">
+                        <img src="https://i.pinimg.com/1200x/41/58/91/41589129e1eba36b5452de2621da8b03.jpg"
+                            alt="Portfolio 5">
+                    </div>
+
+                    <!-- Duplicate for infinite loop -->
+                    <div class="portfolio1-item">
+                        <img src="https://i.pinimg.com/1200x/45/c0/f2/45c0f249ece7248c4d562b51a0639822.jpg"
+                            alt="Portfolio 1">
+                    </div>
+                    <div class="portfolio1-item">
+                        <img src="https://i.pinimg.com/1200x/00/20/24/002024d7eb7c8babc9437b2ccdd712d2.jpg"
+                            alt="Portfolio 2">
+                    </div>
+                    <div class="portfolio1-item">
+                        <img src="https://i.pinimg.com/1200x/c0/dd/3d/c0dd3ddb63eae4bfa614a9543c434fa4.jpg"
+                            alt="Portfolio 3">
+                    </div>
+                    <div class="portfolio1-item">
+                        <img src="https://i.pinimg.com/736x/b7/17/de/b717de8bbbcb46b3d7af834672c72a84.jpg"
+                            alt="Portfolio 4">
+                    </div>
+                    <div class="portfolio1-item">
+                        <img src="https://i.pinimg.com/1200x/41/58/91/41589129e1eba36b5452de2621da8b03.jpg"
+                            alt="Portfolio 5">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Button -->
+            <div class="portfolio1-btn-wrapper">
+                <a href="portfolio.html" class="portfolio1-btn">
+                    View Full Portfolio
+                    <span class="arrow">➜</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Categories Section -->
+    <section class="servicepage-section servicepage-categories">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="servicepage-heading">Strategic Service Categories</h2>
+                    <p class="servicepage-text">Our services are organized into comprehensive categories to address every aspect of your digital presence.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-5">
+                    <div class="servicepage-category fade-in">
+                        <div class="servicepage-category-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3 class="servicepage-category-title">Digital Presence</h3>
+                        <p class="servicepage-category-desc">Complete web solutions including design, development, and optimization to establish your digital footprint.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-5">
+                    <div class="servicepage-category fade-in">
+                        <div class="servicepage-category-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="servicepage-category-title">Growth Marketing</h3>
+                        <p class="servicepage-category-desc">Data-driven strategies to acquire, engage, and retain customers while maximizing ROI across channels.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-5">
+                    <div class="servicepage-category fade-in">
+                        <div class="servicepage-category-icon">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <h3 class="servicepage-category-title">Creative Solutions</h3>
+                        <p class="servicepage-category-desc">Compelling visual storytelling and brand experiences that resonate with your target audience.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="servicepage-section servicepage-process">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="servicepage-heading">Our Proven Process</h2>
+                    <p class="servicepage-text">A structured approach that ensures quality, transparency, and results at every stage of your project.</p>
+                </div>
+            </div>
+            <div class="servicepage-process-steps">
+                <div class="servicepage-process-step fade-in">
+                    <div class="servicepage-step-number">01</div>
+                    <h4 class="servicepage-step-title">Discovery & Strategy</h4>
+                    <p class="servicepage-step-desc">Deep dive into your business goals, audience, and competitive landscape to craft a winning strategy.</p>
+                </div>
+                <div class="servicepage-process-step fade-in">
+                    <div class="servicepage-step-number">02</div>
+                    <h4 class="servicepage-step-title">Design & Development</h4>
+                    <p class="servicepage-step-desc">Transform strategy into compelling designs and robust technical solutions with iterative feedback.</p>
+                </div>
+                <div class="servicepage-process-step fade-in">
+                    <div class="servicepage-step-number">03</div>
+                    <h4 class="servicepage-step-title">Implementation</h4>
+                    <p class="servicepage-step-desc">Execute the plan with precision, maintaining quality standards and adhering to project timelines.</p>
+                </div>
+                <div class="servicepage-process-step fade-in">
+                    <div class="servicepage-step-number">04</div>
+                    <h4 class="servicepage-step-title">Optimization</h4>
+                    <p class="servicepage-step-desc">Continuous monitoring, testing, and refinement to maximize performance and drive ongoing growth.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-container">
+            <!-- Left Content -->
+            <div class="cta-left">
+                <span class="tag">Ready to Transform?</span>
+                <h2>Let's Create Something Amazing Together</h2>
+                <p>
+                    Partner with a results-driven digital marketing agency that combines innovative strategies,
+                    data-driven insights, and a personalized approach to propel your business forward.
+                </p>
+                <a href="contact.html" class="cta-button">
+                    Start Your Project <span>➜</span>
+                </a>
+            </div>
+
+            <!-- Right Features -->
+            <div class="cta-right">
+                <div class="feature">
+                    <span class="dot"></span>
+                    <div>
+                        <h4>Custom Solutions</h4>
+                        <p>Every strategy is tailored to your specific business goals and target audience.</p>
+                    </div>
+                </div>
+
+                <div class="feature">
+                    <span class="dot"></span>
+                    <div>
+                        <h4>Proven Results</h4>
+                        <p>Track record of delivering measurable ROI and business growth for our clients.</p>
+                    </div>
+                </div>
+
+                <div class="feature">
+                    <span class="dot"></span>
+                    <div>
+                        <h4>Expert Team</h4>
+                        <p>Seasoned professionals with expertise across all digital marketing disciplines.</p>
+                    </div>
+                </div>
+
+                <div class="feature">
+                    <span class="dot"></span>
+                    <div>
+                        <h4>Ongoing Support</h4>
+                        <p>Continuous optimization and support to ensure long-term success.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+            <div class="footer-container">
+
+                <!-- Newsletter -->
+                <div class="newsletter">
+                    <div class="newsletter-content">
+                        <h3>Stay Updated</h3>
+                        <p>Subscribe to our newsletter for the latest updates and insights.</p>
+                    </div>
+                    <form class="newsletter-form">
+                        <input type="email" class="newsletter-input" placeholder="Your email address" required>
+                        <button type="submit" class="newsletter-button">Subscribe</button>
+                    </form>
+                </div>
+
+                <div class="footer-main">
+                    <!-- Brand -->
+                   <div class="footer-brand">
+                        <div class="logo">
+                            <img src="./img/logo-01.png" alt="SynoraSol Logo">
+                        </div>
+                        <p>Transforming digital presence through innovative solutions that drive growth and deliver
+                            measurable results.</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Links -->
+                    <div class="footer-links-group">
+                        <div class="footer-column">
+                            <h4>Services</h4>
+                            <ul>
+                                <li><a href="website-development-service.html">Web Development</a></li>
+                                <li><a href="paid-advertising-service.html">Paid Advertising</a></li>
+                                <li><a href="website-design-service.html">Web Design</a></li>
+                                <li><a href="seo-sem-service.html">SEO & SEM</a></li>
+                                <li><a href="social-media-marketing-service.html">Social Media Marketing</a></li>
+                                <li><a href="graphic-design-service.html">Graphic Design</a></li>
+                                <li><a href="video-editing-service.html">Video Editing</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-column">
+                            <h4>Company</h4>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about-us.html">About Us</a></li>
+                                <li><a href="services.html">Services</a></li>
+                                <li><a href="portfolio.html">Portfolio</a></li>
+                                <li><a href="testimonial.html">Testimonials</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-column">
+                            <h4>Contact</h4>
+                            <ul>
+                                <li><a href="#">info@synorasol.com</a></li>
+                                <li><a href="#">+92 3101 908239</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer bottom -->
+                <div class="footer-bottom">
+                    <p>© Synorasol 2025 — All Rights Reserved</p>
+                    <button class="scroll-top" id="scrollTop"><i class="fas fa-chevron-up"></i></button>
+                </div>
+            </div>
+        </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main2.js"></script>
+
+</body>
+
+</html>

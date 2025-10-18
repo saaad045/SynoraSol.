@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SynoraSol</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/ScrollTrigger.min.js"></script>
+    <!--Custom Css-->
+    <link rel="stylesheet" href="./css/hero.css">
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-bg">
+            <div class="floating-orb orb-1"></div>
+            <div class="floating-orb orb-2"></div>
+            <div class="floating-orb orb-3"></div>
+            <div class="particles" id="particles"></div>
+        </div>
+        <div class="preloader-content">
+            <div class="preloader-logo">SYNORASOL.</div>
+            <div class="loading-text">LOADING DIGITAL EXPERIENCE</div>
+            <div class="progress-container">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+            <div class="preloader-spinner"></div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <div class="nav-container">
+        <nav>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </div>
+            <div class="logo">
+                <img src="./img/logo-01.png" alt="SynoraSol Logo" />
+            </div>
+
+
+            <div class="hamburger-wrapper">
+                <div class="hamburger" id="hamburger"></div>
+                <!-- Circular Text -->
+                <div class="menu-circle-text" id="menuTextCircle">
+                </div>
+            </div>
+        </nav>
+
+        <!-- Fullscreen Menu Overlay -->
+        <div class="menu-overlay" id="menuOverlay">
+            <div class="close-menu" id="closeMenu">
+            </div>
+            <ul class="menu-links">
+                <li><a href="index.html" data-number=>Home</a></li>
+                <li><a href="about-us.html" data-number=>About</a></li>
+                <li><a href="services.html" data-number=>Services</a></li>
+                <li><a href="portfolio.html" data-number=>Portfolio</a></li>
+                <li><a href="testimonial.html" data-number=>Testimonials</a></li>
+                <li><a href="contact.html" data-number=>Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-bg"></div>
+
+            <!-- Gradient orbs -->
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+
+            <!-- Floating particles -->
+            <div class="particles" id="particles"></div>
+
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="layer solid">Transform</span>
+                    <span class="layer outline">Your Digital</span>
+                    <span class="layer solid">Presence</span>
+                </h1>
+
+                <p class="hero-subtitle">
+                    We craft impactful websites, marketing strategies, and creative visuals that grow your brand.
+                </p>
+
+                <a href="#contact1" class="hero-btn">Let's Talk</a>
+            </div>
+
+            <div class="scroll-indicator" id="scrollIndicator">
+                <div class="mouse">
+                    <div class="scroll-wheel"></div>
+                </div>
+                <span class="scroll-text">Scroll</span>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about" id="about">
+            <!-- Floating Background Elements -->
+            <div class="floating-element float-1"></div>
+            <div class="floating-element float-2"></div>
+
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 mb-5 mb-lg-0">
+                        <div class="about-image fade-in">
+                            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                                alt="Synorasol Team" class="img-fluid rounded-4 shadow-lg" />
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="about-content fade-in">
+                            <h2 class="font-playfair">Redefining Digital Excellence</h2>
+                            <p class="mission-text font-inter">
+                                We started Synorasol with one vision — to redefine digital
+                                marketing through creativity, precision, and measurable impact.
+                                We're more than a team; we're your growth partners.
+                            </p>
+                            <div class="row stats-container">
+                                <div class="col-sm-6 mb-4">
+                                    <div class="stat text-center">
+                                        <span class="counter font-montserrat" data-target="150">0</span>
+                                        <span class="font-inter">Projects Completed</span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 mb-4">
+                                    <div class="stat text-center">
+                                        <span class="counter font-montserrat" data-target="98">0</span>
+                                        <span class="font-inter">Client Satisfaction</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Additional Info Cards -->
+                            <div class="row mt-4">
+                                <div class="col-md-6 mb-3">
+                                    <div class="info-card">
+                                        <i class="fas fa-rocket"></i>
+                                        <h5>Innovation Driven</h5>
+                                        <p>Cutting-edge solutions tailored to your unique business needs</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <div class="info-card">
+                                        <i class="fas fa-chart-line"></i>
+                                        <h5>Results Focused</h5>
+                                        <p>Data-driven strategies that deliver measurable growth</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services" id="services">
+            <div class="container">
+                <div class="section-header text-center mb-5">
+                    <h2 class="font-space">Our Premium Services</h2>
+                    <p class="font-inter">Comprehensive digital solutions tailored for your growth</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="service-card fade-in">
+                            <div class="card-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h3 class="font-montserrat">Web Development</h3>
+                            <p class="font-inter">Custom, high-performance websites built with cutting-edge technologies
+                                and
+                                optimized for speed and conversion.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="service-card fade-in">
+                            <div class="card-icon">
+                                <i class="fas fa-palette"></i>
+                            </div>
+                            <h3 class="font-montserrat">Web Design</h3>
+                            <p class="font-inter">Visually stunning, user-centric designs that create engaging
+                                experiences
+                                and drive user interaction.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="service-card fade-in">
+                            <div class="card-icon">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <h3 class="font-montserrat">SEO & SEM</h3>
+                            <p class="font-inter">Data-driven strategies to improve search visibility, drive qualified
+                                traffic, and increase conversions.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="service-card fade-in">
+                            <div class="card-icon">
+                                <i class="fas fa-ad"></i>
+                            </div>
+                            <h3 class="font-montserrat">Paid Advertising</h3>
+                            <p class="font-inter">Strategic ad campaigns across platforms to maximize ROI and accelerate
+                                business growth.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="service-card fade-in">
+                            <div class="card-icon">
+                                <i class="fas fa-hashtag"></i>
+                            </div>
+                            <h3 class="font-montserrat">Social Media Marketing</h3>
+                            <p class="font-inter">Engaging content and strategic campaigns to build brand presence and
+                                connect with your audience.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="service-card fade-in">
+                            <div class="card-icon">
+                                <i class="fas fa-pencil-alt"></i>
+                            </div>
+                            <h3 class="font-montserrat">Graphic Design</h3>
+                            <p class="font-inter">Captivating visual identities and marketing materials that communicate
+                                your brand story effectively.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="service-card fade-in">
+                            <div class="card-icon">
+                                <i class="fas fa-video"></i>
+                            </div>
+                            <h3 class="font-montserrat">Video Editing</h3>
+                            <p class="font-inter">Professional video content that tells your story, engages viewers, and
+                                drives action.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="service-card fade-in">
+                            <div class="card-icon">
+                                <i class="fas fa-bullseye"></i>
+                            </div>
+                            <h3 class="font-montserrat">Branding Strategy</h3>
+                            <p class="font-inter">Comprehensive brand development to establish a strong market position
+                                and
+                                emotional connection.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section class="portfolio1-section">
+            <div class="container">
+                <p class="section-subtitle">Creatives Catalogue</p>
+                <h2 class="section1-title" style="color: white !important;">View Our Portfolio & More!</h2>
+
+                <div class="portfolio1-slider">
+                    <div class="portfolio1-track">
+                        <!-- Portfolio Items -->
+                        <div class="portfolio1-item">
+                            <img src="https://i.pinimg.com/1200x/45/c0/f2/45c0f249ece7248c4d562b51a0639822.jpg"
+                                alt="Portfolio 1">
+                        </div>
+                        <div class="portfolio1-item">
+                            <img src="https://i.pinimg.com/1200x/00/20/24/002024d7eb7c8babc9437b2ccdd712d2.jpg"
+                                alt="Portfolio 2">
+                        </div>
+                        <div class="portfolio1-item">
+                            <img src="https://i.pinimg.com/1200x/c0/dd/3d/c0dd3ddb63eae4bfa614a9543c434fa4.jpg"
+                                alt="Portfolio 3">
+                        </div>
+                        <div class="portfolio1-item">
+                            <img src="https://i.pinimg.com/736x/b7/17/de/b717de8bbbcb46b3d7af834672c72a84.jpg"
+                                alt="Portfolio 4">
+                        </div>
+                        <div class="portfolio1-item">
+                            <img src="https://i.pinimg.com/1200x/41/58/91/41589129e1eba36b5452de2621da8b03.jpg"
+                                alt="Portfolio 5">
+                        </div>
+
+                        <!-- Duplicate for infinite loop -->
+                        <div class="portfolio1-item">
+                            <img src="https://i.pinimg.com/1200x/45/c0/f2/45c0f249ece7248c4d562b51a0639822.jpg"
+                                alt="Portfolio 1">
+                        </div>
+                        <div class="portfolio1-item">
+                            <img src="https://i.pinimg.com/1200x/00/20/24/002024d7eb7c8babc9437b2ccdd712d2.jpg"
+                                alt="Portfolio 2">
+                        </div>
+                        <div class="portfolio1-item">
+                            <img src="https://i.pinimg.com/1200x/c0/dd/3d/c0dd3ddb63eae4bfa614a9543c434fa4.jpg"
+                                alt="Portfolio 3">
+                        </div>
+                        <div class="portfolio1-item">
+                            <img src="https://i.pinimg.com/736x/b7/17/de/b717de8bbbcb46b3d7af834672c72a84.jpg"
+                                alt="Portfolio 4">
+                        </div>
+                        <div class="portfolio1-item">
+                            <img src="https://i.pinimg.com/1200x/41/58/91/41589129e1eba36b5452de2621da8b03.jpg"
+                                alt="Portfolio 5">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Button -->
+                <div class="portfolio1-btn-wrapper">
+                    <a href="portfolio.html" class="portfolio1-btn">
+                        View Full Portfolio
+                        <span class="arrow">➜</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!--Companies trusted synorasol-->
+        <section class="trusted-section">
+            <!-- Background Shapes -->
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+
+            <div class="container">
+                <div class="section-header">
+                    <h2>Trusted by Industry Leaders</h2>
+                    <p>Join hundreds of successful companies that trust Synorasol for their digital transformation
+                        journey</p>
+                </div>
+
+                <!-- Main Companies Grid -->
+                <div class="companies-grid">
+                    <div class="company-card" data-company="techcorp">
+                        <div class="company-logo">
+                            <i class="fas fa-microchip"></i>
+                        </div>
+                        <h3>TechCorp Global</h3>
+                        <p>Enterprise software solutions and digital infrastructure transformation</p>
+                        <div class="company-stats">
+                            <div class="stat">
+                                <span class="stat-number">+240%</span>
+                                <span class="stat-label">ROI</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">18mos</span>
+                                <span class="stat-label">Partnership</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="company-card" data-company="finova">
+                        <div class="company-logo">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Finova Bank</h3>
+                        <p>Digital banking platform and customer experience transformation</p>
+                        <div class="company-stats">
+                            <div class="stat">
+                                <span class="stat-number">+180%</span>
+                                <span class="stat-label">Engagement</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">12mos</span>
+                                <span class="stat-label">Partnership</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="company-card" data-company="healthplus">
+                        <div class="company-logo">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <h3>HealthPlus</h3>
+                        <p>Healthcare digital platform and patient portal development</p>
+                        <div class="company-stats">
+                            <div class="stat">
+                                <span class="stat-number">+320%</span>
+                                <span class="stat-label">Efficiency</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">24mos</span>
+                                <span class="stat-label">Partnership</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="company-card" data-company="retailpro">
+                        <div class="company-logo">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <h3>RetailPro</h3>
+                        <p>E-commerce platform and omnichannel retail solutions</p>
+                        <div class="company-stats">
+                            <div class="stat">
+                                <span class="stat-number">+150%</span>
+                                <span class="stat-label">Sales</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">9mos</span>
+                                <span class="stat-label">Partnership</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Infinite Scroll Marquee -->
+                <div class="marquee-section">
+                    <div class="marquee-container">
+                        <div class="marquee-track">
+                            <!-- First Set -->
+                            <div class="marquee-item">
+                                <div class="marquee-logo">
+                                    <i class="fab fa-google"></i>
+                                </div>
+                            </div>
+                            <div class="marquee-item">
+                                <div class="marquee-logo">
+                                    <i class="fab fa-microsoft"></i>
+                                </div>
+                            </div>
+                            <div class="marquee-item">
+                                <div class="marquee-logo">
+                                    <i class="fab fa-amazon"></i>
+                                </div>
+                            </div>
+                            <div class="marquee-item">
+                                <div class="marquee-logo">
+                                    <i class="fab fa-apple"></i>
+                                </div>
+                            </div>
+                            <div class="marquee-item">
+                                <div class="marquee-logo">
+                                    <i class="fab fa-spotify"></i>
+                                </div>
+                            </div>
+                            <!-- Duplicate Set for Infinite Effect -->
+                            <div class="marquee-item">
+                                <div class="marquee-logo">
+                                    <i class="fab fa-google"></i>
+                                </div>
+                            </div>
+                            <div class="marquee-item">
+                                <div class="marquee-logo">
+                                    <i class="fab fa-microsoft"></i>
+                                </div>
+                            </div>
+                            <div class="marquee-item">
+                                <div class="marquee-logo">
+                                    <i class="fab fa-amazon"></i>
+                                </div>
+                            </div>
+                            <div class="marquee-item">
+                                <div class="marquee-logo">
+                                    <i class="fab fa-apple"></i>
+                                </div>
+                            </div>
+                            <div class="marquee-item">
+                                <div class="marquee-logo">
+                                    <i class="fab fa-spotify"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stats Overview -->
+                <div class="stats-overview">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <div class="stat-number-large">150+</div>
+                        <div class="stat-description">Companies Trust Us</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <div class="stat-number-large">98%</div>
+                        <div class="stat-description">Client Satisfaction</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div class="stat-number-large">25+</div>
+                        <div class="stat-description">Countries Served</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <div class="stat-number-large">50+</div>
+                        <div class="stat-description">Awards Won</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials" id="testimonials">
+            <div class="container">
+                <div class="section-header text-center mb-5">
+                    <h2 class="font-space">Client Success Stories</h2>
+                    <p class="font-inter">What our clients say about working with us</p>
+                </div>
+
+                <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+
+                        <div class="carousel-item active">
+                            <div class="testimonial-slide">
+                                <div class="testimonial-card">
+                                    <div class="client-image">
+                                        <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?auto=format&fit=crop&w=200&q=80"
+                                            alt="Sarah Johnson">
+                                    </div>
+                                    <div class="testimonial-content">
+                                        <p class="font-playfair">"Synorasol transformed our digital presence completely.
+                                            Our conversion rates increased by 240% in just three months. Their team's
+                                            expertise in both design and marketing is exceptional."</p>
+                                        <div class="stars">★★★★★</div>
+                                        <div class="client-info">
+                                            <h4 class="font-montserrat">Sarah Johnson</h4>
+                                            <p class="font-inter">CEO, TechInnovate</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="testimonial-slide">
+                                <div class="testimonial-card">
+                                    <div class="client-image">
+                                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=200&q=80"
+                                            alt="Michael Chen">
+                                    </div>
+                                    <div class="testimonial-content">
+                                        <p class="font-playfair">"The website Synorasol built for us not only looks
+                                            incredible but performs exceptionally well. Our bounce rate decreased by 60%
+                                            and we're generating 3x more leads than before."</p>
+                                        <div class="stars">★★★★★</div>
+                                        <div class="client-info">
+                                            <h4 class="font-montserrat">Michael Chen</h4>
+                                            <p class="font-inter">Marketing Director, GrowthLabs</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="testimonial-slide">
+                                <div class="testimonial-card">
+                                    <div class="client-image">
+                                        <img src="https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?auto=format&fit=crop&w=200&q=80"
+                                            alt="Elena Rodriguez">
+                                    </div>
+                                    <div class="testimonial-content">
+                                        <p class="font-playfair">"Working with Synorasol was a game-changer for our
+                                            brand. Their strategic approach to digital marketing helped us enter new
+                                            markets and increase revenue by 180% in one year."</p>
+                                        <div class="stars">★★★★★</div>
+                                        <div class="client-info">
+                                            <h4 class="font-montserrat">Elena Rodriguez</h4>
+                                            <p class="font-inter">Founder, LuxeBrands</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="cta-container">
+                <!-- Left Content -->
+                <div class="cta-left">
+                    <span class="tag">Why Choose Us</span>
+                    <h2>Unlock Revenue Growth for Your Business</h2>
+                    <p>
+                        Partner with a results-driven digital marketing agency that combines innovative strategies,
+                        data-driven insights, and a personalized approach to propel your business forward.
+                    </p>
+                    <a href="contact.html" class="cta-button">
+                        Talk To Us! <span>➜</span>
+                    </a>
+                </div>
+
+                <!-- Right Features -->
+                <div class="cta-right">
+                    <div class="feature">
+                        <span class="dot"></span>
+                        <div>
+                            <h4>Tailored Strategies</h4>
+                            <p>Our team crafts customized marketing plans that align with your goals and target
+                                audience.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="feature">
+                        <span class="dot"></span>
+                        <div>
+                            <h4>Multiple Channel Marketing</h4>
+                            <p>From SEO and social media marketing to paid advertising, we provide a full suite of
+                                services.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="feature">
+                        <span class="dot"></span>
+                        <div>
+                            <h4>Data-Driven Decision</h4>
+                            <p>We monitor campaign performance using advanced analytics and adjust strategies
+                                accordingly.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="feature">
+                        <span class="dot"></span>
+                        <div>
+                            <h4>Expert Team</h4>
+                            <p>We keep clients informed with clear reporting and regular updates.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                
+        </section>
+
+        <!-- Contact Section -->
+        <section class="connect-section" id="contact1">
+            <!-- Background Elements -->
+            <div class="floating-orb orb-1"></div>
+            <div class="floating-orb orb-2"></div>
+
+            <div class="container">
+                <div class="connect-header text-center">
+                    <h2 class="font-space">How Would You Like to Connect?</h2>
+                    <p class="font-inter">Choose the best way to reach out — we're here to help you succeed with
+                        innovative digital solutions.</p>
+                </div>
+
+                <div class="connect-options">
+                    <div class="connect-card active" data-type="chat">
+                        <div class="icon"><i class="fas fa-comments"></i></div>
+                        <h4>Quick Chat</h4>
+                        <p>Instant messaging for quick questions</p>
+                    </div>
+
+                    <div class="connect-card" data-type="project">
+                        <div class="icon"><i class="fas fa-lightbulb"></i></div>
+                        <h4>Project Discussion</h4>
+                        <p>Detailed consultation for your vision</p>
+                    </div>
+
+                    <div class="connect-card" data-type="partner">
+                        <div class="icon"><i class="fas fa-handshake"></i></div>
+                        <h4>Partnership</h4>
+                        <p>Collaborate and grow together</p>
+                    </div>
+
+                    <div class="connect-card" data-type="career">
+                        <div class="icon"><i class="fas fa-briefcase"></i></div>
+                        <h4>Career Opportunity</h4>
+                        <p>Join our innovative team</p>
+                    </div>
+                </div>
+
+                <div class="connect-details" id="connectDetails">
+                    <h4 class="detail-title">Quick Chat</h4>
+                    <p class="font-inter">Perfect for quick questions, pricing inquiries, or initial consultations. Our
+                        team is available for brief conversations to help you get started with your digital
+                        transformation journey.</p>
+                    <div class="connect-buttons">
+                        <a href="https://wa.me/1234567890" target="_blank" class="btn whatsapp">
+                            <i class="fab fa-whatsapp"></i> WhatsApp Chat
+                        </a>
+                        <a href="tel:+1234567890" class="btn call">
+                            <i class="fas fa-phone"></i> Schedule Call
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-container">
+
+                <!-- Newsletter -->
+                <div class="newsletter">
+                    <div class="newsletter-content">
+                        <h3>Stay Updated</h3>
+                        <p>Subscribe to our newsletter for the latest updates and insights.</p>
+                    </div>
+                    <form class="newsletter-form">
+                        <input type="email" class="newsletter-input" placeholder="Your email address" required>
+                        <button type="submit" class="newsletter-button">Subscribe</button>
+                    </form>
+                </div>
+
+                <div class="footer-main">
+                    <!-- Brand -->
+                    <div class="footer-brand">
+                        <div class="logo">
+                            <img src="./img/logo-01.png" alt="SynoraSol Logo">
+                        </div>
+                        <p>Transforming digital presence through innovative solutions that drive growth and deliver
+                            measurable results.</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Links -->
+                    <div class="footer-links-group">
+                        <div class="footer-column">
+                            <h4>Services</h4>
+                            <ul>
+                                <li><a href="website-development-service.html">Web Development</a></li>
+                                <li><a href="paid-advertising-service.html">Paid Advertising</a></li>
+                                <li><a href="website-design-service.html">Web Design</a></li>
+                                <li><a href="seo-sem-service.html">SEO & SEM</a></li>
+                                <li><a href="social-media-marketing-service.html">Social Media Marketing</a></li>
+                                <li><a href="graphic-design-service.html">Graphic Design</a></li>
+                                <li><a href="video-editing-service.html">Video Editing</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-column">
+                            <h4>Company</h4>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about-us.html">About Us</a></li>
+                                <li><a href="services.html">Services</a></li>
+                                <li><a href="portfolio.html">Portfolio</a></li>
+                                <li><a href="testimonial.html">Testimonials</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-column">
+                            <h4>Contact</h4>
+                            <ul>
+                                <li><a href="#">info@synorasol.com</a></li>
+                                <li><a href="#">+92 3101 908239</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer bottom -->
+                <div class="footer-bottom">
+                    <p>© Synorasol 2025 — All Rights Reserved</p>
+                    <button class="scroll-top" id="scrollTop"><i class="fas fa-chevron-up"></i></button>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="./js/main.js"></script>
+
+</body>
+
+</html>

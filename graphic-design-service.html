@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphic Design Services | Synorasol</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="./css/hero.css">
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-bg">
+            <div class="floating-orb orb-1"></div>
+            <div class="floating-orb orb-2"></div>
+            <div class="floating-orb orb-3"></div>
+            <div class="particles" id="particles"></div>
+        </div>
+        <div class="preloader-content">
+            <div class="preloader-logo">SYNORASOL.</div>
+            <div class="loading-text">LOADING DIGITAL EXPERIENCE</div>
+            <div class="progress-container">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+            <div class="preloader-spinner"></div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <div class="nav-container">
+        <nav>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </div>
+            <div class="logo">
+                <img src="./img/logo-01.png" alt="SynoraSol Logo" />
+            </div>
+
+            <div class="hamburger-wrapper">
+                <div class="hamburger" id="hamburger"></div>
+                <!-- Circular Text -->
+                <div class="menu-circle-text" id="menuTextCircle">
+                </div>
+            </div>
+        </nav>
+
+        <!-- Fullscreen Menu Overlay -->
+        <div class="menu-overlay" id="menuOverlay">
+            <div class="close-menu" id="closeMenu">
+            </div>
+            <ul class="menu-links">
+                <li><a href="index.html" data-number=>Home</a></li>
+                <li><a href="about-us.html" data-number=>About</a></li>
+                <li><a href="services.html" data-number=>Services</a></li>
+                <li><a href="portfolio.html" data-number=>Portfolio</a></li>
+                <li><a href="testimonial.html" data-number=>Testimonials</a></li>
+                <li><a href="contact.html" data-number=>Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Web Development Page Hero -->
+    <section class="hero" id="home">
+        <div class="hero-bg"></div>
+
+        <!-- Gradient orbs -->
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+
+        <!-- Floating particles -->
+        <div class="particles" id="particles"></div>
+
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="layer solid">Creative</span>
+                <span class="layer outline">Graphic Design</span>
+            </h1>
+
+            <p class="hero-subtitle">
+                At SynoraSol, our graphic design team transforms ideas into visuals that connect, inspire, and convert —
+                giving
+                your brand a bold visual voice across every platform.
+            </p>
+            <a href="contact.html" class="hero-btn">Let's Collaborate</a>
+        </div>
+
+        <div class="scroll-indicator" id="scrollIndicator">
+            <div class="mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <span class="scroll-text">Scroll</span>
+        </div>
+    </section>
+
+
+    <!-- Seo Services Section -->
+    <section class="webpage-section webpage-services">
+  <div class="webpage-section-bg"></div>
+  <div class="container">
+    <div class="webpage-content">
+      <h2 class="webpage-section-title">Creative Graphic Design Solutions</h2>
+      <p class="webpage-text">
+        From logos to brand identities, our designers craft visuals that resonate with audiences and reflect your brand’s story beautifully.
+      </p>
+
+      <div class="webpage-cards">
+        <!-- Logo & Branding -->
+        <div class="webpage-card fade-in">
+          <div class="webpage-card-icon"><i class="fas fa-palette"></i></div>
+          <h3 class="webpage-card-title">Logo & Brand Identity</h3>
+          <p class="webpage-card-text">
+            Unique, memorable branding that captures your essence and communicates your vision effectively.
+          </p>
+          <ul class="webpage-card-features">
+            <li>Custom Logo Design</li>
+            <li>Brand Color Palette</li>
+            <li>Typography System</li>
+            <li>Brand Guidelines</li>
+            <li>Identity Consistency</li>
+          </ul>
+        </div>
+
+        <!-- Social Media Graphics -->
+        <div class="webpage-card fade-in">
+          <div class="webpage-card-icon"><i class="fas fa-share-alt"></i></div>
+          <h3 class="webpage-card-title">Social Media Design</h3>
+          <p class="webpage-card-text">
+            Eye-catching graphics tailored for each platform — boosting engagement and brand recognition.
+          </p>
+          <ul class="webpage-card-features">
+            <li>Instagram & Facebook Posts</li>
+            <li>Ad Campaign Designs</li>
+            <li>Story & Reel Templates</li>
+            <li>Platform-Optimized Sizes</li>
+            <li>Branded Visual Themes</li>
+          </ul>
+        </div>
+
+        <!-- Print & Marketing Material -->
+        <div class="webpage-card fade-in">
+          <div class="webpage-card-icon"><i class="fas fa-print"></i></div>
+          <h3 class="webpage-card-title">Print & Marketing Design</h3>
+          <p class="webpage-card-text">
+            Stunning marketing materials designed to leave a lasting impression — from brochures to business cards.
+          </p>
+          <ul class="webpage-card-features">
+            <li>Brochures & Flyers</li>
+            <li>Posters & Banners</li>
+            <li>Business Cards</li>
+            <li>Packaging Design</li>
+            <li>Custom Illustrations</li>
+          </ul>
+        </div>
+
+        <!-- UI Design -->
+        <div class="webpage-card fade-in">
+          <div class="webpage-card-icon"><i class="fas fa-desktop"></i></div>
+          <h3 class="webpage-card-title">UI Design</h3>
+          <p class="webpage-card-text">
+            Visually stunning interfaces that balance creativity and clarity — built to elevate user experience.
+          </p>
+          <ul class="webpage-card-features">
+            <li>Web & App UI Design</li>
+            <li>Wireframing & Prototyping</li>
+            <li>Interactive Elements</li>
+            <li>Modern UI Systems</li>
+            <li>Design System Setup</li>
+          </ul>
+        </div>
+
+        <!-- Infographics & Visual Data -->
+        <div class="webpage-card fade-in">
+          <div class="webpage-card-icon"><i class="fas fa-chart-pie"></i></div>
+          <h3 class="webpage-card-title">Infographics & Data Design</h3>
+          <p class="webpage-card-text">
+            Transform data into beautiful visuals — simplifying complex ideas through creative storytelling.
+          </p>
+          <ul class="webpage-card-features">
+            <li>Data Visualization</li>
+            <li>Custom Infographics</li>
+            <li>Report Design</li>
+            <li>Presentation Graphics</li>
+            <li>Educational Visuals</li>
+          </ul>
+        </div>
+
+        <!-- Ongoing Design Support -->
+        <div class="webpage-card fade-in">
+          <div class="webpage-card-icon"><i class="fas fa-life-ring"></i></div>
+          <h3 class="webpage-card-title">Ongoing Design Support</h3>
+          <p class="webpage-card-text">
+            Keep your visuals fresh and aligned with trends through our continuous creative design support.
+          </p>
+          <ul class="webpage-card-features">
+            <li>Monthly Design Packages</li>
+            <li>Brand Updates</li>
+            <li>Creative Consultation</li>
+            <li>Ad Campaign Assets</li>
+            <li>Quick Turnaround</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- why choose  Section -->
+    <section class="why-choose-faq">
+  <div class="faq-container">
+    <h2 class="webpage-section-title">Why Choose SynoraSol for Graphic Design?</h2>
+    <p class="webpage-text">
+      We believe design is more than visuals — it’s communication. At SynoraSol, our creative team crafts designs that not only look stunning but also drive brand engagement and recognition.
+    </p>
+
+    <div class="faq-wrapper">
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>🎨 Unique Brand Identity Creation</span>
+          <i class="arrow"></i>
+        </button>
+        <div class="faq-answer">
+          <p>
+            Every design is custom-made to reflect your brand’s essence — ensuring you stand out in every medium.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>⚡ Consistency Across Platforms</span>
+          <i class="arrow"></i>
+        </button>
+        <div class="faq-answer">
+          <p>
+            We ensure that your brand’s visuals remain consistent across print, digital, and social platforms.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>🧠 Strategy Meets Creativity</span>
+          <i class="arrow"></i>
+        </button>
+        <div class="faq-answer">
+          <p>
+            Our design approach blends marketing strategy with creativity — making sure your visuals convert and communicate effectively.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>📱 Optimized for Every Medium</span>
+          <i class="arrow"></i>
+        </button>
+        <div class="faq-answer">
+          <p>
+            Whether it’s print or digital, we design assets that look crisp and perform flawlessly everywhere.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>💡 Fast Turnaround, High Quality</span>
+          <i class="arrow"></i>
+        </button>
+        <div class="faq-answer">
+          <p>
+            Get professional-quality designs delivered quickly — without compromising creativity or precision.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--philosophy-section-->
+<section class="webpage-section philosophy-section">
+  <div class="philosophy-bg"></div>
+  <div class="container">
+    <div class="philosophy-header fade-in">
+      <h2 class="webpage-section-title">Our Creative Philosophy</h2>
+      <p class="webpage-text">
+        At SynoraSol, design is our language — emotion is our message. 
+        We craft timeless visuals through passion, precision, and purpose, 
+        building brands that don’t just look beautiful, but feel unforgettable.
+      </p>
+    </div>
+
+    <div class="philosophy-grid">
+      <div class="philosophy-card fade-up">
+        <div class="philosophy-icon"><i class="fas fa-lightbulb"></i></div>
+        <h3 class="philosophy-title">Purposeful Creativity</h3>
+        <p class="philosophy-desc">
+          Every design begins with strategy — we create art that speaks, 
+          connects, and moves audiences with meaningful storytelling.
+        </p>
+      </div>
+
+      <div class="philosophy-card fade-up">
+        <div class="philosophy-icon"><i class="fas fa-rocket"></i></div>
+        <h3 class="philosophy-title">Innovation-Driven Design</h3>
+        <p class="philosophy-desc">
+          From bold visuals to forward-thinking concepts, 
+          we bring innovation to every project to help your brand lead, not follow.
+        </p>
+      </div>
+
+      <div class="philosophy-card fade-up">
+        <div class="philosophy-icon"><i class="fas fa-handshake"></i></div>
+        <h3 class="philosophy-title">Collaborative Vision</h3>
+        <p class="philosophy-desc">
+          We partner closely with you, blending creative expertise 
+          with your brand’s DNA to build a unified, authentic identity.
+        </p>
+      </div>
+
+      <div class="philosophy-card fade-up">
+        <div class="philosophy-icon"><i class="fas fa-fire"></i></div>
+        <h3 class="philosophy-title">Passion in Every Pixel</h3>
+        <p class="philosophy-desc">
+          Our work is powered by passion — we infuse energy, precision, 
+          and emotion into each design, making every pixel count.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- Development Process Section -->
+    <section class="webpage-section">
+  <div class="webpage-section-bg"></div>
+  <div class="container">
+    <div class="webpage-content">
+      <h2 class="webpage-section-title">Our Graphic Design Process</h2>
+      <p class="webpage-text">
+        SynoraSol follows a creative, structured design process — combining strategy, research, and visual storytelling to bring your ideas to life beautifully.
+      </p>
+
+      <div class="webpage-process-steps">
+        <div class="webpage-process-step fade-in">
+          <div class="webpage-step-number">01</div>
+          <h3 class="webpage-step-title">Discovery & Strategy</h3>
+          <p class="webpage-step-desc">
+            Understanding your goals, audience, and brand personality to form the creative foundation.
+          </p>
+        </div>
+
+        <div class="webpage-process-step fade-in">
+          <div class="webpage-step-number">02</div>
+          <h3 class="webpage-step-title">Concept Creation</h3>
+          <p class="webpage-step-desc">
+            Developing creative ideas and design directions that align with your message and brand tone.
+          </p>
+        </div>
+
+        <div class="webpage-process-step fade-in">
+          <div class="webpage-step-number">03</div>
+          <h3 class="webpage-step-title">Design & Refinement</h3>
+          <p class="webpage-step-desc">
+            Crafting visuals, refining concepts, and ensuring every detail is aligned with your goals.
+          </p>
+        </div>
+
+        <div class="webpage-process-step fade-in">
+          <div class="webpage-step-number">04</div>
+          <h3 class="webpage-step-title">Feedback & Finalization</h3>
+          <p class="webpage-step-desc">
+            Incorporating feedback and perfecting designs for final delivery across all platforms.
+          </p>
+        </div>
+
+        <div class="webpage-process-step fade-in">
+          <div class="webpage-step-number">05</div>
+          <h3 class="webpage-step-title">Delivery & Ongoing Support</h3>
+          <p class="webpage-step-desc">
+            Providing all design assets, formats, and continued support for updates and new campaigns.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- Portfolio Showcase Section -->
+     <!-- Portfolio Section -->
+        <section class="portfolio1-section">
+            <div class="container">
+                <h2 class="webpage-section-title">Our Graphic Design Project showcase
+                </h2>
+
+                <div class="portfolio1-slider">
+                    <div class="portfolio1-track">
+                        <!-- Portfolio Items -->
+                        <div class="portfolio1-item">
+                            <img src="https://i.pinimg.com/1200x/45/c0/f2/45c0f249ece7248c4d562b51a0639822.jpg"
+                                alt="Portfolio 1">
+                        </div>
+                        <div class="portfolio1-item">
+                            <img src="https://i.pinimg.com/1200x/00/20/24/002024d7eb7c8babc9437b2ccdd712d2.jpg"
+                                alt="Portfolio 2">
+                        </div>
+                        <div class="portfolio1-item">
+                            <img src="https://i.pinimg.com/1200x/c0/dd/3d/c0dd3ddb63eae4bfa614a9543c434fa4.jpg"
+                                alt="Portfolio 3">
+                        </div>
+                        <div class="portfolio1-item">
+                            <img src="https://i.pinimg.com/736x/b7/17/de/b717de8bbbcb46b3d7af834672c72a84.jpg"
+                                alt="Portfolio 4">
+                        </div>
+                        <div class="portfolio1-item">
+                            <img src="https://i.pinimg.com/1200x/41/58/91/41589129e1eba36b5452de2621da8b03.jpg"
+                                alt="Portfolio 5">
+                        </div>
+
+                        <!-- Duplicate for infinite loop -->
+                        <div class="portfolio1-item">
+                            <img src="https://i.pinimg.com/1200x/45/c0/f2/45c0f249ece7248c4d562b51a0639822.jpg"
+                                alt="Portfolio 1">
+                        </div>
+                        <div class="portfolio1-item">
+                            <img src="https://i.pinimg.com/1200x/00/20/24/002024d7eb7c8babc9437b2ccdd712d2.jpg"
+                                alt="Portfolio 2">
+                        </div>
+                        <div class="portfolio1-item">
+                            <img src="https://i.pinimg.com/1200x/c0/dd/3d/c0dd3ddb63eae4bfa614a9543c434fa4.jpg"
+                                alt="Portfolio 3">
+                        </div>
+                        <div class="portfolio1-item">
+                            <img src="https://i.pinimg.com/736x/b7/17/de/b717de8bbbcb46b3d7af834672c72a84.jpg"
+                                alt="Portfolio 4">
+                        </div>
+                        <div class="portfolio1-item">
+                            <img src="https://i.pinimg.com/1200x/41/58/91/41589129e1eba36b5452de2621da8b03.jpg"
+                                alt="Portfolio 5">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-container">
+            <!-- Left Content -->
+            <div class="cta-left">
+                <span class="tag">Ready to Build?</span>
+                <h2>Let's Create Your Digital Masterpiece</h2>
+                <p>
+                    Partner with us to transform your ideas into powerful, scalable web solutions that drive business
+                    growth and deliver exceptional user experiences.
+                </p>
+                <a href="contact.html" class="cta-button">
+                    Start Your Project <span>➜</span>
+                </a>
+            </div>
+
+            <!-- Right Features -->
+            <div class="cta-right">
+                <div class="feature">
+                    <span class="dot"></span>
+                    <div>
+                        <h4>Expert Development Team</h4>
+                        <p>Seasoned developers with expertise across modern technologies and frameworks.</p>
+                    </div>
+                </div>
+
+                <div class="feature">
+                    <span class="dot"></span>
+                    <div>
+                        <h4>Quality Assurance</h4>
+                        <p>Rigorous testing and code reviews to ensure bug-free, high-performance solutions.</p>
+                    </div>
+                </div>
+
+                <div class="feature">
+                    <span class="dot"></span>
+                    <div>
+                        <h4>Scalable Architecture</h4>
+                        <p>Future-proof solutions designed to grow with your business and user base.</p>
+                    </div>
+                </div>
+
+                <div class="feature">
+                    <span class="dot"></span>
+                    <div>
+                        <h4>Ongoing Support</h4>
+                        <p>Continuous maintenance, updates, and technical support for long-term success.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+
+            <!-- Newsletter -->
+            <div class="newsletter">
+                <div class="newsletter-content">
+                    <h3>Stay Updated</h3>
+                    <p>Subscribe to our newsletter for the latest updates and insights.</p>
+                </div>
+                <form class="newsletter-form">
+                    <input type="email" class="newsletter-input" placeholder="Your email address" required>
+                    <button type="submit" class="newsletter-button">Subscribe</button>
+                </form>
+            </div>
+
+            <div class="footer-main">
+                <!-- Brand -->
+                <div class="footer-brand">
+                    <div class="logo">
+                        <img src="./img/logo-01.png" alt="SynoraSol Logo">
+                    </div>
+                    <p>Transforming digital presence through innovative solutions that drive growth and deliver
+                        measurable results.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+
+                <!-- Links -->
+                <div class="footer-links-group">
+                    <div class="footer-column">
+                        <h4>Services</h4>
+                        <ul>
+                                <li><a href="website-development-service.html">Web Development</a></li>
+                                <li><a href="paid-advertising-service.html">Paid Advertising</a></li>
+                                <li><a href="website-design-service.html">Web Design</a></li>
+                                <li><a href="seo-sem-service.html">SEO & SEM</a></li>
+                                <li><a href="social-media-marketing-service.html">Social Media Marketing</a></li>
+                                <li><a href="graphic-design-service.html">Graphic Design</a></li>
+                                <li><a href="video-editing-service.html">Video Editing</a></li>
+                            </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Our Team</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4>Contact</h4>
+                        <ul>
+                            <li><a href="#">info@synorasol.com</a></li>
+                            <li><a href="#">+1 (555) 123-4567</a></li>
+                            <li><a href="#">123 Tech Street</a></li>
+                            <li><a href="#">Digital City, DC 10101</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer bottom -->
+            <div class="footer-bottom">
+                <p>© Synorasol 2025 — All Rights Reserved</p>
+                <button class="scroll-top" id="scrollTop"><i class="fas fa-chevron-up"></i></button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main6.js"></script>
+
+</body>
+
+</html>

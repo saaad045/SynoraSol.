@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Synorasol - Premium Digital Marketing Agency</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="./css/hero.css">
+   
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-bg">
+            <div class="floating-orb orb-1"></div>
+            <div class="floating-orb orb-2"></div>
+            <div class="floating-orb orb-3"></div>
+            <div class="particles" id="particles"></div>
+        </div>
+        <div class="preloader-content">
+            <div class="preloader-logo">SYNORASOL.</div>
+            <div class="loading-text">LOADING DIGITAL EXPERIENCE</div>
+            <div class="progress-container">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+            <div class="preloader-spinner"></div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <div class="nav-container">
+        <nav>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </div>
+            <div class="logo">
+                <img src="./img/logo-01.png" alt="SynoraSol Logo" />
+            </div>
+
+            <div class="hamburger-wrapper">
+                <div class="hamburger" id="hamburger"></div>
+                <!-- Circular Text -->
+                <div class="menu-circle-text" id="menuTextCircle">
+                </div>
+            </div>
+        </nav>
+
+        <!-- Fullscreen Menu Overlay -->
+        <div class="menu-overlay" id="menuOverlay">
+            <div class="close-menu" id="closeMenu">
+            </div>
+            <ul class="menu-links">
+                <li><a href="index.html" data-number=>Home</a></li>
+                <li><a href="about-us.html" data-number=>About</a></li>
+                <li><a href="services.html" data-number=>Services</a></li>
+                <li><a href="portfolio.html" data-number=>Portfolio</a></li>
+                <li><a href="testimonial.html" data-number=>Testimonials</a></li>
+                <li><a href="contact.html" data-number=>Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Contact Page Hero -->
+    <section class="hero" id="home">
+        <div class="hero-bg"></div>
+
+        <!-- Gradient orbs -->
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+
+        <!-- Floating particles -->
+        <div class="particles" id="particles"></div>
+
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="layer solid">Ready to</span>
+                <span class="layer outline">Collaborate?</span>
+                <span class="layer solid">Let’s Talk.</span>
+            </h1>
+
+            <p class="hero-subtitle">
+                Connect with the SynoraSol team and let’s create something that drives results.
+            </p>
+
+            <a href="#contact" class="hero-btn">Get in Touch</a>
+        </div>
+
+        <div class="scroll-indicator" id="scrollIndicator">
+            <div class="mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <span class="scroll-text">Scroll</span>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contactpage-section" id="contact">
+        <div class="contactpage-section-bg"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="contactpage-heading">We’ve been Waiting for you!</h2>
+                    <p class="contactpage-text">We’re just a text/email/or visit away! Just contact us and our team will
+                        guide you in the best possible way. </p>
+                </div>
+            </div>
+            <div class="contactpage-form-container">
+                <form class="contactpage-form fade-in">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="contactpage-form-group">
+                                <label class="contactpage-form-label" for="name">Full Name</label>
+                                <input type="text" id="name" class="contactpage-form-input"
+                                    placeholder="Enter your full name" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="contactpage-form-group">
+                                <label class="contactpage-form-label" for="email">Email Address</label>
+                                <input type="email" id="email" class="contactpage-form-input"
+                                    placeholder="Enter your email address" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="contactpage-form-group">
+                                <label class="contactpage-form-label" for="company">Company</label>
+                                <input type="text" id="company" class="contactpage-form-input"
+                                    placeholder="Your company name">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="contactpage-form-group">
+                                <label class="contactpage-form-label" for="phone">Phone Number</label>
+                                <input type="tel" id="phone" class="contactpage-form-input"
+                                    placeholder="Your phone number">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contactpage-form-group">
+                        <label class="contactpage-form-label" for="subject">Subject</label>
+                        <input type="text" id="subject" class="contactpage-form-input"
+                            placeholder="What is this regarding?" required>
+                    </div>
+                    <div class="contactpage-form-group">
+                        <label class="contactpage-form-label" for="message">Your Message</label>
+                        <textarea id="message" class="contactpage-form-textarea"
+                            placeholder="Tell us about your project, goals, and any specific requirements..."
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="contactpage-form-submit">Send Message</button>
+                </form>
+
+                <div class="contactpage-info fade-in">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="contactpage-info-item">
+                                <div class="contactpage-info-label">Email</div>
+                                <div class="contactpage-info-value">hello@synorasol.com</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="contactpage-info-item">
+                                <div class="contactpage-info-label">Phone</div>
+                                <div class="contactpage-info-value">+1 (555) 123-4567</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="contactpage-info-item">
+                                <div class="contactpage-info-label">Response Time</div>
+                                <div class="contactpage-info-value">Within 24 hours</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-container">
+            <!-- Left Content -->
+            <div class="cta-left">
+                <span class="tag">Emergency Support</span>
+                <h2>Need Immediate Assistance?</h2>
+                <p>
+                    For urgent matters or technical support, our team is available to provide quick solutions and ensure
+                    your business continues to operate smoothly.
+                </p>
+                <a href="tel:+15551234567" class="cta-button">
+                    Call Now <span>➜</span>
+                </a>
+            </div>
+
+            <!-- Right Features -->
+            <div class="cta-right">
+                <div class="feature">
+                    <span class="dot"></span>
+                    <div>
+                        <h4>24/7 Support</h4>
+                        <p>Round-the-clock technical support for critical issues and emergencies.</p>
+                    </div>
+                </div>
+
+                <div class="feature">
+                    <span class="dot"></span>
+                    <div>
+                        <h4>Quick Response</h4>
+                        <p>Immediate attention to urgent matters with dedicated support channels.</p>
+                    </div>
+                </div>
+
+                <div class="feature">
+                    <span class="dot"></span>
+                    <div>
+                        <h4>Expert Solutions</h4>
+                        <p>Seasoned professionals ready to resolve complex technical challenges.</p>
+                    </div>
+                </div>
+
+                <div class="feature">
+                    <span class="dot"></span>
+                    <div>
+                        <h4>Priority Handling</h4>
+                        <p>Emergency requests receive top priority in our workflow and resources.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+            <div class="footer-container">
+
+                <!-- Newsletter -->
+                <div class="newsletter">
+                    <div class="newsletter-content">
+                        <h3>Stay Updated</h3>
+                        <p>Subscribe to our newsletter for the latest updates and insights.</p>
+                    </div>
+                    <form class="newsletter-form">
+                        <input type="email" class="newsletter-input" placeholder="Your email address" required>
+                        <button type="submit" class="newsletter-button">Subscribe</button>
+                    </form>
+                </div>
+
+                <div class="footer-main">
+                    <!-- Brand -->
+                    <div class="footer-brand">
+                        <div class="logo">
+                            <img src="./img/logo-01.png" alt="SynoraSol Logo">
+                        </div>
+                        <p>Transforming digital presence through innovative solutions that drive growth and deliver
+                            measurable results.</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Links -->
+                    <div class="footer-links-group">
+                        <div class="footer-column">
+                            <h4>Services</h4>
+                            <ul>
+                                <li><a href="website-development-service.html">Web Development</a></li>
+                                <li><a href="paid-advertising-service.html">Paid Advertising</a></li>
+                                <li><a href="website-design-service.html">Web Design</a></li>
+                                <li><a href="seo-sem-service.html">SEO & SEM</a></li>
+                                <li><a href="social-media-marketing-service.html">Social Media Marketing</a></li>
+                                <li><a href="graphic-design-service.html">Graphic Design</a></li>
+                                <li><a href="video-editing-service.html">Video Editing</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-column">
+                            <h4>Company</h4>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about-us.html">About Us</a></li>
+                                <li><a href="services.html">Services</a></li>
+                                <li><a href="portfolio.html">Portfolio</a></li>
+                                <li><a href="testimonial.html">Testimonials</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-column">
+                            <h4>Contact</h4>
+                            <ul>
+                                <li><a href="#">info@synorasol.com</a></li>
+                                <li><a href="#">+92 3101 908239</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer bottom -->
+                <div class="footer-bottom">
+                    <p>© Synorasol 2025 — All Rights Reserved</p>
+                    <button class="scroll-top" id="scrollTop"><i class="fas fa-chevron-up"></i></button>
+                </div>
+            </div>
+        </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main3.js"></script>
+
+</body>
+
+</html>

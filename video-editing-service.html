@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Editing Services | Synorasol</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="./css/hero.css">
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-bg">
+            <div class="floating-orb orb-1"></div>
+            <div class="floating-orb orb-2"></div>
+            <div class="floating-orb orb-3"></div>
+            <div class="particles" id="particles"></div>
+        </div>
+        <div class="preloader-content">
+            <div class="preloader-logo">SYNORASOL.</div>
+            <div class="loading-text">LOADING DIGITAL EXPERIENCE</div>
+            <div class="progress-container">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+            <div class="preloader-spinner"></div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <div class="nav-container">
+        <nav>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </div>
+            <div class="logo">
+                <img src="./img/logo-01.png" alt="SynoraSol Logo" />
+            </div>
+
+            <div class="hamburger-wrapper">
+                <div class="hamburger" id="hamburger"></div>
+                <!-- Circular Text -->
+                <div class="menu-circle-text" id="menuTextCircle">
+                </div>
+            </div>
+        </nav>
+
+        <!-- Fullscreen Menu Overlay -->
+        <div class="menu-overlay" id="menuOverlay">
+            <div class="close-menu" id="closeMenu">
+            </div>
+            <ul class="menu-links">
+                <li><a href="index.html" data-number=>Home</a></li>
+                <li><a href="about-us.html" data-number=>About</a></li>
+                <li><a href="services.html" data-number=>Services</a></li>
+                <li><a href="portfolio.html" data-number=>Portfolio</a></li>
+                <li><a href="testimonial.html" data-number=>Testimonials</a></li>
+                <li><a href="contact.html" data-number=>Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Web Development Page Hero -->
+    <section class="hero" id="home">
+        <div class="hero-bg"></div>
+
+        <!-- Gradient orbs -->
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+
+        <!-- Floating particles -->
+        <div class="particles" id="particles"></div>
+
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="layer solid">Creative</span>
+                <span class="layer outline">Video Editing
+                </span>
+            </h1>
+
+            <p class="hero-subtitle">
+                Our video editing team transforms raw footage into captivating visual stories — enhancing your brand’s
+                message through creativity, precision, and cinematic quality.
+            </p>
+
+            <a href="contact.html" class="hero-btn">Let's Collaborate</a>
+        </div>
+
+        <div class="scroll-indicator" id="scrollIndicator">
+            <div class="mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <span class="scroll-text">Scroll</span>
+        </div>
+    </section>
+
+
+    <!-- Web Design Services Section -->
+    <section class="webpage-section webpage-services">
+  <div class="webpage-section-bg"></div>
+  <div class="container">
+    <div class="webpage-content">
+      <h2 class="webpage-section-title">Professional Video Editing Solutions</h2>
+      <p class="webpage-text">
+        We transform raw footage into cinematic stories — blending creativity, rhythm, and emotion to craft videos that
+        engage, inspire, and convert your audience.
+      </p>
+
+      <div class="webpage-cards">
+        <!-- Storytelling & Editing -->
+        <div class="webpage-card fade-in">
+          <div class="webpage-card-icon"><i class="fas fa-film"></i></div>
+          <h3 class="webpage-card-title">Storytelling & Editing</h3>
+          <p class="webpage-card-text">
+            We shape your raw footage into powerful, seamless narratives that capture emotion, purpose, and brand voice.
+          </p>
+          <ul class="webpage-card-features">
+            <li>Dynamic Scene Transitions</li>
+            <li>Emotional Story Flow</li>
+            <li>Precision Cutting</li>
+            <li>Color Mood Enhancement</li>
+            <li>Professional Timing & Rhythm</li>
+          </ul>
+        </div>
+
+        <!-- Motion Graphics -->
+        <div class="webpage-card fade-in">
+          <div class="webpage-card-icon"><i class="fas fa-photo-video"></i></div>
+          <h3 class="webpage-card-title">Motion Graphics</h3>
+          <p class="webpage-card-text">
+            Eye-catching visuals and animated elements that bring energy, style, and depth to your video content.
+          </p>
+          <ul class="webpage-card-features">
+            <li>Animated Text & Titles</li>
+            <li>Logo Reveals</li>
+            <li>Custom Motion Effects</li>
+            <li>Transitions & Visual Sync</li>
+            <li>Brand-Aligned Animation</li>
+          </ul>
+        </div>
+
+        <!-- Color Grading -->
+        <div class="webpage-card fade-in">
+          <div class="webpage-card-icon"><i class="fas fa-palette"></i></div>
+          <h3 class="webpage-card-title">Color Grading</h3>
+          <p class="webpage-card-text">
+            We enhance tone, lighting, and color to create a cinematic look that amplifies the emotion and visual
+            consistency of every frame.
+          </p>
+          <ul class="webpage-card-features">
+            <li>Film-style LUT Application</li>
+            <li>Lighting & Tone Correction</li>
+            <li>Scene Consistency</li>
+            <li>Vibrance Balancing</li>
+            <li>Creative Color Moods</li>
+          </ul>
+        </div>
+
+        <!-- Sound Design -->
+        <div class="webpage-card fade-in">
+          <div class="webpage-card-icon"><i class="fas fa-headphones-alt"></i></div>
+          <h3 class="webpage-card-title">Sound Design</h3>
+          <p class="webpage-card-text">
+            Professional sound mixing and effects that elevate storytelling, creating immersive audio experiences for
+            every viewer.
+          </p>
+          <ul class="webpage-card-features">
+            <li>Music & Voice Syncing</li>
+            <li>Sound FX Integration</li>
+            <li>Noise Reduction</li>
+            <li>Audio Balancing</li>
+            <li>Emotion-Driven Soundscapes</li>
+          </ul>
+        </div>
+
+        <!-- Social Media Edits -->
+        <div class="webpage-card fade-in">
+          <div class="webpage-card-icon"><i class="fas fa-share-alt"></i></div>
+          <h3 class="webpage-card-title">Social Media Edits</h3>
+          <p class="webpage-card-text">
+            Fast-paced, platform-optimized edits designed to grab attention and drive engagement on every channel.
+          </p>
+          <ul class="webpage-card-features">
+            <li>Short-form Reels & TikToks</li>
+            <li>YouTube Edits</li>
+            <li>Aspect Ratio Optimization</li>
+            <li>Branded Intros/Outros</li>
+            <li>Trendy Transitions</li>
+          </ul>
+        </div>
+
+        <!-- Post-Production Support -->
+        <div class="webpage-card fade-in">
+          <div class="webpage-card-icon"><i class="fas fa-cogs"></i></div>
+          <h3 class="webpage-card-title">Post-Production Support</h3>
+          <p class="webpage-card-text">
+            From final revisions to format delivery, we ensure your video performs flawlessly across platforms and
+            audiences.
+          </p>
+          <ul class="webpage-card-features">
+            <li>Multi-format Exporting</li>
+            <li>Quality Assurance Review</li>
+            <li>Feedback-based Revisions</li>
+            <li>Subtitle Integration</li>
+            <li>Consistent Brand Output</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- why choose  Section -->
+    <section class="why-choose-faq">
+  <div class="faq-container">
+    <h2 class="webpage-section-title">Why Choose SynoraSol for Video Editing & Post-Production</h2>
+    <p class="webpage-text">
+      At SynoraSol, we transform raw footage into cinematic stories that engage, inspire, and convert. 
+      Every frame, transition, and sound effect is crafted to enhance your brand’s message and emotional impact.
+    </p>
+
+    <div class="faq-wrapper">
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>🎬 Story-Driven Editing</span>
+          <i class="arrow"></i>
+        </button>
+        <div class="faq-answer">
+          <p>
+            We focus on storytelling — shaping your footage into a narrative that captures attention and connects emotionally 
+            with your audience, ensuring every second has purpose and power.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>🎧 Professional Sound & Music Sync</span>
+          <i class="arrow"></i>
+        </button>
+        <div class="faq-answer">
+          <p>
+            From sound balancing to music licensing, we fine-tune every beat and dialogue to create immersive experiences that 
+            complement visuals and strengthen emotional resonance.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>✨ Advanced Visual Effects & Transitions</span>
+          <i class="arrow"></i>
+        </button>
+        <div class="faq-answer">
+          <p>
+            Our editors use cinematic-grade effects, smooth transitions, and dynamic animations to elevate your videos — 
+            making them look polished, professional, and unforgettable.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>📱 Optimized for All Platforms</span>
+          <i class="arrow"></i>
+        </button>
+        <div class="faq-answer">
+          <p>
+            Whether it’s YouTube, Instagram, TikTok, or your website — we tailor every video for maximum performance and 
+            engagement on each platform.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>🚀 Fast Turnaround with Premium Quality</span>
+          <i class="arrow"></i>
+        </button>
+        <div class="faq-answer">
+          <p>
+            We combine speed and precision — delivering high-quality edits, revisions, and exports quickly without compromising 
+            on detail, creativity, or storytelling depth.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 🌟 OUR EDITING TOOLKIT SECTION -->
+<section class="toolkit-section">
+  <div class="toolkit-container">
+    <div class="toolkit-header">
+      <h2 class="webpage-section-title">Our Editing Toolkit</h2>
+      <p class="webpage-text">
+        Precision meets creativity — our powerhouse of professional tools turns raw footage into cinematic magic.
+      </p>
+    </div>
+
+    <div class="toolkit-grid">
+      <div class="tool-card">
+        <div class="glow"></div>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Adobe_Premiere_Pro_CC_icon.svg" alt="Premiere Pro">
+        <h3>Adobe Premiere Pro</h3>
+        <p>Seamless editing for storytelling perfection.</p>
+      </div>
+      <div class="tool-card">
+        <div class="glow"></div>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/d/db/Adobe_After_Effects_CC_icon.svg" alt="After Effects">
+        <h3>After Effects</h3>
+        <p>Dynamic motion graphics & cinematic visuals.</p>
+      </div>
+      <div class="tool-card">
+        <div class="glow"></div>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/DaVinci_Resolve_17_logo.svg" alt="DaVinci Resolve">
+        <h3>DaVinci Resolve</h3>
+        <p>Hollywood-grade color grading & precision cuts.</p>
+      </div>
+      <div class="tool-card">
+        <div class="glow"></div>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/20/Final_Cut_Pro_X_logo.png" alt="Final Cut Pro">
+        <h3>Final Cut Pro</h3>
+        <p>Apple’s powerhouse for fast, fluid editing.</p>
+      </div>
+      <div class="tool-card">
+        <div class="glow"></div>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/66/Adobe_Audition_CC_icon.svg" alt="Adobe Audition">
+        <h3>Adobe Audition</h3>
+        <p>Audio mixing that amplifies every moment.</p>
+      </div>
+      <div class="tool-card">
+        <div class="glow"></div>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/f/f2/Canva_icon_2021.svg" alt="Canva Pro">
+        <h3>Canva Pro</h3>
+        <p>Quick, clean visuals for creative support.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- Design Process Section -->
+   <section class="webpage-section">
+  <div class="webpage-section-bg"></div>
+  <div class="container">
+    <div class="webpage-content">
+      <h2 class="webpage-section-title">Our Video Editing Process</h2>
+      <p class="webpage-text">
+        At SynoraSol, every video project is crafted through a precise, creative workflow — 
+        combining storytelling, editing mastery, and cinematic vision to deliver videos that captivate, inspire, and convert.
+      </p>
+
+      <div class="webpage-process-steps">
+        <!-- Step 1 -->
+        <div class="webpage-process-step fade-in">
+          <div class="webpage-step-number">01</div>
+          <h3 class="webpage-step-title">Concept & Story Planning</h3>
+          <p class="webpage-step-desc">
+            We begin by understanding your vision and message — defining the story, tone, and emotional direction 
+            that align with your brand and audience goals.
+          </p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="webpage-process-step fade-in">
+          <div class="webpage-step-number">02</div>
+          <h3 class="webpage-step-title">Footage Organization & Selection</h3>
+          <p class="webpage-step-desc">
+            Our editors review, sort, and select the most powerful clips — ensuring each shot contributes meaningfully 
+            to the narrative and pacing of your video.
+          </p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="webpage-process-step fade-in">
+          <div class="webpage-step-number">03</div>
+          <h3 class="webpage-step-title">Editing & Visual Flow</h3>
+          <p class="webpage-step-desc">
+            We bring your footage to life with clean cuts, smooth transitions, and visual rhythm — 
+            shaping a seamless flow that keeps viewers engaged from start to finish.
+          </p>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="webpage-process-step fade-in">
+          <div class="webpage-step-number">04</div>
+          <h3 class="webpage-step-title">Color Grading & Aesthetic Enhancement</h3>
+          <p class="webpage-step-desc">
+            Using professional color grading tools, we balance tones, enhance mood, and create a visual style 
+            that perfectly fits your brand identity and story.
+          </p>
+        </div>
+
+        <!-- Step 5 -->
+        <div class="webpage-process-step fade-in">
+          <div class="webpage-step-number">05</div>
+          <h3 class="webpage-step-title">Sound Design & Music Integration</h3>
+          <p class="webpage-step-desc">
+            From crisp audio mixing to soundtrack selection, we ensure your video sounds as compelling as it looks — 
+            amplifying emotion and engagement through sound.
+          </p>
+        </div>
+
+        <!-- Step 6 -->
+        <div class="webpage-process-step fade-in">
+          <div class="webpage-step-number">06</div>
+          <h3 class="webpage-step-title">Final Review & Delivery</h3>
+          <p class="webpage-step-desc">
+            Every edit undergoes detailed review and optimization for different platforms — 
+            ensuring your final video is high-quality, export-ready, and visually flawless.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Portfolio Showcase Section -->
+    <section class="webpage-section webpage-portfolio">
+  <div class="container">
+    <div class="webpage-content">
+      <h2 class="webpage-section-title">Our Video Editing Portfolio</h2>
+      <p class="webpage-text">
+        A showcase of cinematic storytelling, creative editing, and brand-focused visuals — where every frame speaks with emotion and purpose.
+      </p>
+
+      <div class="webpage-portfolio-grid">
+        <!-- Card 1 -->
+        <div class="webpage-portfolio-card fade-in">
+          <div class="webpage-portfolio-image">
+            <img src="https://images.unsplash.com/photo-1610398281651-1f7e6b13f5a0?auto=format&fit=crop&w=1000&q=80"
+              alt="Brand Storytelling Video" />
+            <span class="webpage-portfolio-category">Brand Story</span>
+            <div class="webpage-portfolio-overlay">
+              <a href="#" class="portfolio-btn">Watch Project</a>
+            </div>
+          </div>
+          <div class="webpage-portfolio-content">
+            <h3 class="webpage-portfolio-title">The Essence of Motion</h3>
+            <p class="webpage-portfolio-desc">
+              A cinematic brand video crafted with dynamic transitions and storytelling visuals that capture emotion and identity.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="webpage-portfolio-card fade-in">
+          <div class="webpage-portfolio-image">
+            <img src="https://images.unsplash.com/photo-1609921141835-705f3a8c9b4d?auto=format&fit=crop&w=1000&q=80"
+              alt="Product Commercial" />
+            <span class="webpage-portfolio-category">Commercial</span>
+            <div class="webpage-portfolio-overlay">
+              <a href="#" class="portfolio-btn">Watch Project</a>
+            </div>
+          </div>
+          <div class="webpage-portfolio-content">
+            <h3 class="webpage-portfolio-title">Motion Made to Sell</h3>
+            <p class="webpage-portfolio-desc">
+              A high-energy promotional video with impactful pacing, bold typography, and vibrant motion graphics for modern brands.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="webpage-portfolio-card fade-in">
+          <div class="webpage-portfolio-image">
+            <img src="https://images.unsplash.com/photo-1628191010615-4307a3f669c9?auto=format&fit=crop&w=1000&q=80"
+              alt="Social Media Reel" />
+            <span class="webpage-portfolio-category">Social Media</span>
+            <div class="webpage-portfolio-overlay">
+              <a href="#" class="portfolio-btn">Watch Project</a>
+            </div>
+          </div>
+          <div class="webpage-portfolio-content">
+            <h3 class="webpage-portfolio-title">Reel that Engages</h3>
+            <p class="webpage-portfolio-desc">
+              Fast-paced editing, modern effects, and storytelling that turn short-form content into attention-grabbing digital experiences.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-container">
+            <!-- Left Content -->
+            <div class="cta-left">
+                <span class="tag">Ready to Build?</span>
+                <h2>Let's Create Your Digital Masterpiece</h2>
+                <p>
+                    Partner with us to transform your ideas into powerful, scalable web solutions that drive business
+                    growth and deliver exceptional user experiences.
+                </p>
+                <a href="contact.html" class="cta-button">
+                    Start Your Project <span>➜</span>
+                </a>
+            </div>
+
+            <!-- Right Features -->
+            <div class="cta-right">
+                <div class="feature">
+                    <span class="dot"></span>
+                    <div>
+                        <h4>Expert Development Team</h4>
+                        <p>Seasoned developers with expertise across modern technologies and frameworks.</p>
+                    </div>
+                </div>
+
+                <div class="feature">
+                    <span class="dot"></span>
+                    <div>
+                        <h4>Quality Assurance</h4>
+                        <p>Rigorous testing and code reviews to ensure bug-free, high-performance solutions.</p>
+                    </div>
+                </div>
+
+                <div class="feature">
+                    <span class="dot"></span>
+                    <div>
+                        <h4>Scalable Architecture</h4>
+                        <p>Future-proof solutions designed to grow with your business and user base.</p>
+                    </div>
+                </div>
+
+                <div class="feature">
+                    <span class="dot"></span>
+                    <div>
+                        <h4>Ongoing Support</h4>
+                        <p>Continuous maintenance, updates, and technical support for long-term success.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+
+            <!-- Newsletter -->
+            <div class="newsletter">
+                <div class="newsletter-content">
+                    <h3>Stay Updated</h3>
+                    <p>Subscribe to our newsletter for the latest updates and insights.</p>
+                </div>
+                <form class="newsletter-form">
+                    <input type="email" class="newsletter-input" placeholder="Your email address" required>
+                    <button type="submit" class="newsletter-button">Subscribe</button>
+                </form>
+            </div>
+
+            <div class="footer-main">
+                <!-- Brand -->
+                <div class="footer-brand">
+                    <div class="logo">
+                        <img src="./img/logo-01.png" alt="SynoraSol Logo">
+                    </div>
+                    <p>Transforming digital presence through innovative solutions that drive growth and deliver
+                        measurable results.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+
+                <!-- Links -->
+                <div class="footer-links-group">
+                    <div class="footer-column">
+                        <h4>Services</h4>
+                         <ul>
+                                <li><a href="website-development-service.html">Web Development</a></li>
+                                <li><a href="paid-advertising-service.html">Paid Advertising</a></li>
+                                <li><a href="website-design-service.html">Web Design</a></li>
+                                <li><a href="seo-sem-service.html">SEO & SEM</a></li>
+                                <li><a href="social-media-marketing-service.html">Social Media Marketing</a></li>
+                                <li><a href="graphic-design-service.html">Graphic Design</a></li>
+                                <li><a href="video-editing-service.html">Video Editing</a></li>
+                            </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Our Team</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4>Contact</h4>
+                        <ul>
+                            <li><a href="#">info@synorasol.com</a></li>
+                            <li><a href="#">+1 (555) 123-4567</a></li>
+                            <li><a href="#">123 Tech Street</a></li>
+                            <li><a href="#">Digital City, DC 10101</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer bottom -->
+            <div class="footer-bottom">
+                <p>© Synorasol 2025 — All Rights Reserved</p>
+                <button class="scroll-top" id="scrollTop"><i class="fas fa-chevron-up"></i></button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main6.js"></script>
+
+</body>
+
+</html>

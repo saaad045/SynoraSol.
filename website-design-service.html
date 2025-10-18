@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Design Services | Synorasol</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <!-- GSAP -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/ScrollTrigger.min.js"></script>
+  <link rel="stylesheet" href="./css/hero.css">
+</head>
+
+<body>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="preloader-bg">
+      <div class="floating-orb orb-1"></div>
+      <div class="floating-orb orb-2"></div>
+      <div class="floating-orb orb-3"></div>
+      <div class="particles" id="particles"></div>
+    </div>
+    <div class="preloader-content">
+      <div class="preloader-logo">SYNORASOL.</div>
+      <div class="loading-text">LOADING DIGITAL EXPERIENCE</div>
+      <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+      </div>
+      <div class="preloader-spinner"></div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <div class="nav-container">
+    <nav>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+      </div>
+      <div class="logo">
+        <img src="./img/logo-01.png" alt="SynoraSol Logo" />
+      </div>
+
+      <div class="hamburger-wrapper">
+        <div class="hamburger" id="hamburger"></div>
+        <!-- Circular Text -->
+        <div class="menu-circle-text" id="menuTextCircle">
+        </div>
+      </div>
+    </nav>
+
+    <!-- Fullscreen Menu Overlay -->
+    <div class="menu-overlay" id="menuOverlay">
+      <div class="close-menu" id="closeMenu">
+      </div>
+      <ul class="menu-links">
+        <li><a href="index.html" data-number=>Home</a></li>
+        <li><a href="about-us.html" data-number=>About</a></li>
+        <li><a href="services.html" data-number=>Services</a></li>
+        <li><a href="portfolio.html" data-number=>Portfolio</a></li>
+        <li><a href="testimonial.html" data-number=>Testimonials</a></li>
+        <li><a href="contact.html" data-number=>Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Web Development Page Hero -->
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+
+    <!-- Gradient orbs -->
+    <div class="gradient-orb orb-1"></div>
+    <div class="gradient-orb orb-2"></div>
+
+    <!-- Floating particles -->
+    <div class="particles" id="particles"></div>
+
+    <div class="hero-content">
+      <h1 class="hero-title">
+        <span class="layer solid">Website</span>
+        <span class="layer outline">Design
+        </span>
+      </h1>
+
+      <p class="hero-subtitle">
+        Our Web design team specializes in creating websites that are not only visually appealing but also
+        strategically designed to meet your business objectives.
+      </p>
+      <a href="contact.html" class="hero-btn">Let's Collaborate</a>
+    </div>
+
+    <div class="scroll-indicator" id="scrollIndicator">
+      <div class="mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+      <span class="scroll-text">Scroll</span>
+    </div>
+  </section>
+
+
+  <!-- Web Design Services Section -->
+  <section class="webpage-section webpage-services">
+    <div class="webpage-section-bg"></div>
+    <div class="container">
+      <div class="webpage-content">
+        <h2 class="webpage-section-title">Creative Website Design Solutions</h2>
+        <p class="webpage-text">
+          We craft visually stunning, user-focused websites that blend creativity, functionality, and strategy — helping
+          brands
+          stand out, connect, and grow online.
+        </p>
+
+        <div class="webpage-cards">
+          <!-- Custom Website Design -->
+          <div class="webpage-card fade-in">
+            <div class="webpage-card-icon"><i class="fas fa-pencil-ruler"></i></div>
+            <h3 class="webpage-card-title">Custom Website Design</h3>
+            <p class="webpage-card-text">
+              Beautifully designed websites built uniquely for your brand, ensuring a powerful first impression and an
+              engaging user experience.
+            </p>
+            <ul class="webpage-card-features">
+              <li>Brand-aligned UI Design</li>
+              <li>Pixel-perfect Layouts</li>
+              <li>Creative Typography</li>
+              <li>Modern Design Trends</li>
+              <li>High-Converting Layouts</li>
+            </ul>
+          </div>
+
+          <!-- UI/UX Design -->
+          <div class="webpage-card fade-in">
+            <div class="webpage-card-icon"><i class="fas fa-object-group"></i></div>
+            <h3 class="webpage-card-title">UI/UX Experience</h3>
+            <p class="webpage-card-text">
+              Human-centered design that balances aesthetics with usability — creating intuitive and delightful user
+              journeys.
+            </p>
+            <ul class="webpage-card-features">
+              <li>User Journey Mapping</li>
+              <li>Wireframes & Prototypes</li>
+              <li>Responsive Interfaces</li>
+              <li>Accessibility Standards</li>
+              <li>Data-driven Improvements</li>
+            </ul>
+          </div>
+
+          <!-- Responsive Design -->
+          <div class="webpage-card fade-in">
+            <div class="webpage-card-icon"><i class="fas fa-laptop-code"></i></div>
+            <h3 class="webpage-card-title">Responsive Design</h3>
+            <p class="webpage-card-text">
+              Designs that adapt seamlessly across devices — ensuring flawless experiences on desktop, tablet, and
+              mobile.
+            </p>
+            <ul class="webpage-card-features">
+              <li>Mobile-first Approach</li>
+              <li>Adaptive Layouts</li>
+              <li>Cross-browser Compatibility</li>
+              <li>Optimized Performance</li>
+              <li>Fluid Grid Systems</li>
+            </ul>
+          </div>
+
+          <!-- Landing Page Design -->
+          <div class="webpage-card fade-in">
+            <div class="webpage-card-icon"><i class="fas fa-bullseye"></i></div>
+            <h3 class="webpage-card-title">Landing Page Design</h3>
+            <p class="webpage-card-text">
+              High-converting landing pages designed with strategy, clarity, and visual appeal — built to drive action.
+            </p>
+            <ul class="webpage-card-features">
+              <li>Conversion-focused Layouts</li>
+              <li>Clear CTA Placement</li>
+              <li>Optimized for Campaigns</li>
+              <li>Visual Storytelling</li>
+              <li>Engaging Interactions</li>
+            </ul>
+          </div>
+
+          <!-- Website Redesign -->
+          <div class="webpage-card fade-in">
+            <div class="webpage-card-icon"><i class="fas fa-sync-alt"></i></div>
+            <h3 class="webpage-card-title">Website Redesign</h3>
+            <p class="webpage-card-text">
+              Transform your outdated website into a modern, high-performing digital experience that reflects your
+              brand’s growth.
+            </p>
+            <ul class="webpage-card-features">
+              <li>Visual Overhaul & Branding</li>
+              <li>Improved Navigation</li>
+              <li>Faster Load Speeds</li>
+              <li>SEO-friendly Updates</li>
+              <li>Modern Aesthetics</li>
+            </ul>
+          </div>
+
+          <!-- Maintenance & Support -->
+          <div class="webpage-card fade-in">
+            <div class="webpage-card-icon"><i class="fas fa-life-ring"></i></div>
+            <h3 class="webpage-card-title">Ongoing Support</h3>
+            <p class="webpage-card-text">
+              Keep your website secure, updated, and performing flawlessly with our dedicated maintenance and design
+              support services.
+            </p>
+            <ul class="webpage-card-features">
+              <li>Monthly Design Tweaks</li>
+              <li>Bug Fixes & Security</li>
+              <li>UI Updates & Enhancements</li>
+              <li>Speed Optimization</li>
+              <li>Content Refresh</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- why choose  Section -->
+  <section class="why-choose-faq">
+    <div class="faq-container">
+      <h2 class="webpage-section-title">Why Choose SynoraSol for Website Design & UI/UX.</h2>
+      <p class="webpage-text">
+        At SynoraSol, we don’t just design websites — we craft digital experiences that inspire trust,
+        engagement, and conversions. Your design isn’t just how it looks, it’s how it makes users feel.
+      </p>
+
+      <div class="faq-wrapper">
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>🎨 Human-Centered Design Approach</span>
+            <i class="arrow"></i>
+          </button>
+          <div class="faq-answer">
+            <p>
+              We create intuitive, user-friendly interfaces by understanding real user behavior — blending
+              functionality with aesthetic appeal for a seamless experience.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>🧩 Brand-Driven Visual Identity</span>
+            <i class="arrow"></i>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Every pixel is intentional — from color psychology to typography, we ensure your website reflects
+              your brand’s personality and values consistently.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>⚡ Seamless User Experience (UX)</span>
+            <i class="arrow"></i>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Our UX design process ensures effortless navigation, clarity in flow, and minimal friction —
+              turning visitors into loyal customers through purposeful interactions.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>📱 Responsive & Mobile-First Design</span>
+            <i class="arrow"></i>
+          </button>
+          <div class="faq-answer">
+            <p>
+              We design with every device in mind — delivering adaptive layouts that perform beautifully across
+              desktops, tablets, and smartphones.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>💡 Research-Driven & Modern Aesthetics</span>
+            <i class="arrow"></i>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Our creative process combines UX research, design psychology, and modern visual trends to craft
+              experiences that not only look stunning but perform exceptionally well.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Design Process Section -->
+  <section class="webpage-section">
+    <div class="webpage-section-bg"></div>
+    <div class="container">
+      <div class="webpage-content">
+        <h2 class="webpage-section-title">Our Website Design Process</h2>
+        <p class="webpage-text">
+          At SynoraSol, every design project follows a structured creative workflow that blends strategy, design
+          psychology, and innovation — ensuring a user-first, visually stunning digital experience.
+        </p>
+
+        <div class="webpage-process-steps">
+          <div class="webpage-process-step fade-in">
+            <div class="webpage-step-number">01</div>
+            <h3 class="webpage-step-title">Research & Discovery</h3>
+            <p class="webpage-step-desc">
+              We start by understanding your brand, audience, and goals — analyzing user behavior and market trends to
+              form a strong design direction.
+            </p>
+          </div>
+
+          <div class="webpage-process-step fade-in">
+            <div class="webpage-step-number">02</div>
+            <h3 class="webpage-step-title">Wireframing & UX Strategy</h3>
+            <p class="webpage-step-desc">
+              We map out intuitive user journeys and wireframes to define a seamless, functional structure that enhances
+              the overall user experience.
+            </p>
+          </div>
+
+          <div class="webpage-process-step fade-in">
+            <div class="webpage-step-number">03</div>
+            <h3 class="webpage-step-title">UI Design & Visual Crafting</h3>
+            <p class="webpage-step-desc">
+              Using your brand identity, we design pixel-perfect layouts, color systems, and interactive elements that
+              captivate users and tell your story beautifully.
+            </p>
+          </div>
+
+          <div class="webpage-process-step fade-in">
+            <div class="webpage-step-number">04</div>
+            <h3 class="webpage-step-title">Prototyping & Refinement</h3>
+            <p class="webpage-step-desc">
+              Interactive prototypes bring the design to life — we test, refine, and perfect every screen to ensure a
+              cohesive, high-performing final experience.
+            </p>
+          </div>
+
+          <div class="webpage-process-step fade-in">
+            <div class="webpage-step-number">05</div>
+            <h3 class="webpage-step-title">Handoff & Implementation Support</h3>
+            <p class="webpage-step-desc">
+              Our designers collaborate closely with developers to ensure smooth implementation and pixel-perfect
+              translation of the design into code.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- UI Showcase Section -->
+  <section class="webdesign-section webdesign-ui-showcase">
+    <div class="webdesign-section-bg"></div>
+    <div class="container">
+      <div class="webdesign-content">
+        <h2 class="webpage-section-title">Crafting Digital Experiences</h2>
+        <p class="webpage-text">We blend aesthetics with functionality to create interfaces that users love to interact
+          with.</p>
+
+        <div class="webdesign-ui-container">
+          <div class="webdesign-ui-content">
+            <h3 style="font-size: 2rem; margin-bottom: 1.5rem; color: var(--text-light);">User-Centered Design
+              Philosophy</h3>
+            <p style="color: var(--text-gray); margin-bottom: 2rem; line-height: 1.7;">
+              Our design approach puts users at the center of everything we create. We combine deep user research with
+              cutting-edge design trends to build interfaces that are not only visually stunning but also intuitive and
+              accessible.
+            </p>
+
+            <ul class="webdesign-ui-features">
+              <li><i class="fas fa-check-circle"></i> Intuitive navigation and information architecture</li>
+              <li><i class="fas fa-check-circle"></i> Accessibility-first design principles</li>
+              <li><i class="fas fa-check-circle"></i> Consistent visual language and branding</li>
+              <li><i class="fas fa-check-circle"></i> Performance-optimized assets and layouts</li>
+              <li><i class="fas fa-check-circle"></i> Cross-browser and device compatibility</li>
+            </ul>
+          </div>
+
+          <div class="webdesign-ui-visual">
+            <div class="webdesign-ui-device">
+              <div class="webdesign-ui-screen">
+                <div style="text-align: center; padding: 20px;">
+                  <div
+                    style="width: 80px; height: 80px; background: var(--gradient); border-radius: 20px; margin: 0 auto 20px;">
+                  </div>
+                  <h4 style="color: var(--text-light); margin-bottom: 10px;">Modern Interface Design</h4>
+                  <p style="color: var(--text-gray); font-size: 0.9rem;">Clean, intuitive, and engaging user experiences
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Showcase Section -->
+<section class="webpage-section webpage-portfolio">
+        <div class="container">
+            <div class="webpage-content">
+                <h2 class="webpage-section-title">Our Website Development Portfolio</h2>
+                <p class="webpage-text">
+                    A showcase of modern, user-centric web solutions — combining aesthetics, performance, and
+                    innovation.
+                </p>
+
+                <div class="webpage-portfolio-grid">
+                    <!-- Card 1 -->
+                    <div class="webpage-portfolio-card fade-in">
+                        <div class="webpage-portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1612831662375-295c1003d3ca?auto=format&fit=crop&w=1000&q=80"
+                                alt="Luxury E-commerce" />
+                            <span class="webpage-portfolio-category">E-commerce</span>
+                            <div class="webpage-portfolio-overlay">
+                                <a href="#" class="portfolio-btn">View Project</a>
+                            </div>
+                        </div>
+                        <div class="webpage-portfolio-content">
+                            <h3 class="webpage-portfolio-title">LuxeFashion Store</h3>
+                            <p class="webpage-portfolio-desc">
+                                A sleek, conversion-optimized e-commerce platform with intuitive navigation and custom
+                                checkout.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="webpage-portfolio-card fade-in">
+                        <div class="webpage-portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=1000&q=80"
+                                alt="SaaS Dashboard" />
+                            <span class="webpage-portfolio-category">SaaS Platform</span>
+                            <div class="webpage-portfolio-overlay">
+                                <a href="#" class="portfolio-btn">View Project</a>
+                            </div>
+                        </div>
+                        <div class="webpage-portfolio-content">
+                            <h3 class="webpage-portfolio-title">ProjectFlow SaaS</h3>
+                            <p class="webpage-portfolio-desc">
+                                Real-time project management dashboard built with React and Node.js for smooth
+                                collaboration.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="cta-container">
+      <!-- Left Content -->
+      <div class="cta-left">
+        <span class="tag">Ready to Build?</span>
+        <h2>Let's Create Your Digital Masterpiece</h2>
+        <p>
+          Partner with us to transform your ideas into powerful, scalable web solutions that drive business
+          growth and deliver exceptional user experiences.
+        </p>
+        <a href="contact.html" class="cta-button">
+          Start Your Project <span>➜</span>
+        </a>
+      </div>
+
+      <!-- Right Features -->
+      <div class="cta-right">
+        <div class="feature">
+          <span class="dot"></span>
+          <div>
+            <h4>Expert Development Team</h4>
+            <p>Seasoned developers with expertise across modern technologies and frameworks.</p>
+          </div>
+        </div>
+
+        <div class="feature">
+          <span class="dot"></span>
+          <div>
+            <h4>Quality Assurance</h4>
+            <p>Rigorous testing and code reviews to ensure bug-free, high-performance solutions.</p>
+          </div>
+        </div>
+
+        <div class="feature">
+          <span class="dot"></span>
+          <div>
+            <h4>Scalable Architecture</h4>
+            <p>Future-proof solutions designed to grow with your business and user base.</p>
+          </div>
+        </div>
+
+        <div class="feature">
+          <span class="dot"></span>
+          <div>
+            <h4>Ongoing Support</h4>
+            <p>Continuous maintenance, updates, and technical support for long-term success.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+
+      <!-- Newsletter -->
+      <div class="newsletter">
+        <div class="newsletter-content">
+          <h3>Stay Updated</h3>
+          <p>Subscribe to our newsletter for the latest updates and insights.</p>
+        </div>
+        <form class="newsletter-form">
+          <input type="email" class="newsletter-input" placeholder="Your email address" required>
+          <button type="submit" class="newsletter-button">Subscribe</button>
+        </form>
+      </div>
+
+      <div class="footer-main">
+        <!-- Brand -->
+        <div class="footer-brand">
+          <div class="logo">
+            <img src="./img/logo-01.png" alt="SynoraSol Logo">
+          </div>
+          <p>Transforming digital presence through innovative solutions that drive growth and deliver
+            measurable results.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+          </div>
+        </div>
+
+        <!-- Links -->
+        <div class="footer-links-group">
+          <div class="footer-column">
+            <h4>Services</h4>
+             <ul>
+                                <li><a href="website-development-service.html">Web Development</a></li>
+                                <li><a href="paid-advertising-service.html">Paid Advertising</a></li>
+                                <li><a href="website-design-service.html">Web Design</a></li>
+                                <li><a href="seo-sem-service.html">SEO & SEM</a></li>
+                                <li><a href="social-media-marketing-service.html">Social Media Marketing</a></li>
+                                <li><a href="graphic-design-service.html">Graphic Design</a></li>
+                                <li><a href="video-editing-service.html">Video Editing</a></li>
+                            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Our Team</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4>Contact</h4>
+            <ul>
+              <li><a href="#">info@synorasol.com</a></li>
+              <li><a href="#">+1 (555) 123-4567</a></li>
+              <li><a href="#">123 Tech Street</a></li>
+              <li><a href="#">Digital City, DC 10101</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer bottom -->
+      <div class="footer-bottom">
+        <p>© Synorasol 2025 — All Rights Reserved</p>
+        <button class="scroll-top" id="scrollTop"><i class="fas fa-chevron-up"></i></button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./js/main6.js"></script>
+
+</body>
+
+</html>

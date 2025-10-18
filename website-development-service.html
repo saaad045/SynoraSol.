@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Services | Synorasol - Premium Digital Agency</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="./css/hero.css">
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-bg">
+            <div class="floating-orb orb-1"></div>
+            <div class="floating-orb orb-2"></div>
+            <div class="floating-orb orb-3"></div>
+            <div class="particles" id="particles"></div>
+        </div>
+        <div class="preloader-content">
+            <div class="preloader-logo">SYNORASOL.</div>
+            <div class="loading-text">LOADING DIGITAL EXPERIENCE</div>
+            <div class="progress-container">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+            <div class="preloader-spinner"></div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <div class="nav-container">
+        <nav>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </div>
+            <div class="logo">
+                <img src="./img/logo-01.png" alt="SynoraSol Logo" />
+            </div>
+
+            <div class="hamburger-wrapper">
+                <div class="hamburger" id="hamburger"></div>
+                <!-- Circular Text -->
+                <div class="menu-circle-text" id="menuTextCircle">
+                </div>
+            </div>
+        </nav>
+
+        <!-- Fullscreen Menu Overlay -->
+        <div class="menu-overlay" id="menuOverlay">
+            <div class="close-menu" id="closeMenu">
+            </div>
+            <ul class="menu-links">
+                <li><a href="index.html" data-number=>Home</a></li>
+                <li><a href="about-us.html" data-number=>About</a></li>
+                <li><a href="services.html" data-number=>Services</a></li>
+                <li><a href="portfolio.html" data-number=>Portfolio</a></li>
+                <li><a href="testimonial.html" data-number=>Testimonials</a></li>
+                <li><a href="contact.html" data-number=>Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Web Development Page Hero -->
+    <section class="hero" id="home">
+        <div class="hero-bg"></div>
+
+        <!-- Gradient orbs -->
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+
+        <!-- Floating particles -->
+        <div class="particles" id="particles"></div>
+
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="layer solid">Website</span>
+                <span class="layer outline">Development
+                </span>
+            </h1>
+
+            <p class="hero-subtitle">
+                Our Web development team specializes in creating websites that are not only visually appealing but also
+                strategically designed to meet your business objectives.
+            </p>
+            <a href="contact.html" class="hero-btn">Let's Collaborate</a>
+        </div>
+
+        <div class="scroll-indicator" id="scrollIndicator">
+            <div class="mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <span class="scroll-text">Scroll</span>
+        </div>
+    </section>
+
+    <!-- Web Development Services Section -->
+    <section class="webpage-section webpage-services">
+        <div class="webpage-section-bg"></div>
+        <div class="container">
+            <div class="webpage-content">
+                <h2 class="webpage-section-title">Comprehensive Web Solutions</h2>
+                <p class="webpage-text">
+                    From responsive websites to complex web applications, we deliver robust,
+                    scalable, and high-performance digital solutions tailored to your business needs.
+                </p>
+
+                <div class="webpage-cards">
+                    <!-- Custom Web Development -->
+                    <div class="webpage-card fade-in">
+                        <div class="webpage-card-icon"><i class="fas fa-code"></i></div>
+                        <h3 class="webpage-card-title">Custom Web Development</h3>
+                        <p class="webpage-card-text">
+                            Tailored web solutions built from scratch to meet your specific business requirements and
+                            objectives.
+                        </p>
+                        <ul class="webpage-card-features">
+                            <li>Custom WordPress Development</li>
+                            <li>React & Vue.js Applications</li>
+                            <li>PHP/Laravel Backend Solutions</li>
+                            <li>Node.js & Express APIs</li>
+                            <li>Database Architecture</li>
+                        </ul>
+                    </div>
+
+                    <!-- E-commerce Solutions -->
+                    <div class="webpage-card fade-in">
+                        <div class="webpage-card-icon"><i class="fas fa-shopping-cart"></i></div>
+                        <h3 class="webpage-card-title">E-commerce Development</h3>
+                        <p class="webpage-card-text">
+                            Complete online store solutions designed to maximize conversions and provide seamless
+                            shopping experiences.
+                        </p>
+                        <ul class="webpage-card-features">
+                            <li>WooCommerce & Shopify</li>
+                            <li>Custom Payment Gateways</li>
+                            <li>Inventory Management</li>
+                            <li>Multi-vendor Platforms</li>
+                            <li>Order Processing Systems</li>
+                        </ul>
+                    </div>
+
+                    <!-- Web Application Development -->
+                    <div class="webpage-card fade-in">
+                        <div class="webpage-card-icon"><i class="fas fa-layer-group"></i></div>
+                        <h3 class="webpage-card-title">Web Applications</h3>
+                        <p class="webpage-card-text">
+                            Dynamic, interactive web applications that solve complex business challenges and streamline
+                            operations.
+                        </p>
+                        <ul class="webpage-card-features">
+                            <li>Progressive Web Apps (PWA)</li>
+                            <li>Real-time Applications</li>
+                            <li>CRM & ERP Systems</li>
+                            <li>Dashboard & Analytics</li>
+                            <li>API Integration</li>
+                        </ul>
+                    </div>
+
+                    <!-- Website Maintenance -->
+                    <div class="webpage-card fade-in">
+                        <div class="webpage-card-icon"><i class="fas fa-tools"></i></div>
+                        <h3 class="webpage-card-title">Website Maintenance</h3>
+                        <p class="webpage-card-text">
+                            Keep your website secure, fast, and up-to-date with our proactive maintenance and monitoring
+                            services.
+                        </p>
+                        <ul class="webpage-card-features">
+                            <li>Regular Updates & Backups</li>
+                            <li>Bug Fixes & Error Resolution</li>
+                            <li>Security Patching</li>
+                            <li>Performance Optimization</li>
+                            <li>Technical Support</li>
+                        </ul>
+                    </div>
+
+                    <!-- SEO & Optimization -->
+                    <div class="webpage-card fade-in">
+                        <div class="webpage-card-icon"><i class="fas fa-chart-line"></i></div>
+                        <h3 class="webpage-card-title">SEO & Optimization</h3>
+                        <p class="webpage-card-text">
+                            Drive visibility and traffic with our performance-focused SEO and site optimization
+                            solutions.
+                        </p>
+                        <ul class="webpage-card-features">
+                            <li>Technical SEO</li>
+                            <li>Page Speed Optimization</li>
+                            <li>Core Web Vitals Improvements</li>
+                            <li>On-Page & Off-Page SEO</li>
+                            <li>Analytics & Reporting</li>
+                        </ul>
+                    </div>
+
+                    <!-- Web Hosting & Deployment -->
+                    <div class="webpage-card fade-in">
+                        <div class="webpage-card-icon"><i class="fas fa-server"></i></div>
+                        <h3 class="webpage-card-title">Hosting & Deployment</h3>
+                        <p class="webpage-card-text">
+                            Reliable hosting and CI/CD deployment strategies ensuring your site runs smoothly and scales
+                            effortlessly.
+                        </p>
+                        <ul class="webpage-card-features">
+                            <li>Managed Cloud Hosting</li>
+                            <li>Domain & DNS Management</li>
+                            <li>SSL & Security Setup</li>
+                            <li>Continuous Deployment</li>
+                            <li>Server Monitoring</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- why choose  Section -->
+    <section class="why-choose-faq">
+        <div class="faq-container">
+            <h2 class="webpage-section-title">Why Choose SynoraSol for Web Solutions.</h2>
+            <p class="webpage-text">
+                A website should be both beautiful and functional. A study shows that customers don’t purchase on
+                impulse. Rather, 92% consumers always check the website of a business before buying.
+            </p>
+            <div class="faq-wrapper">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>💡 Innovative Design Approach</span>
+                        <i class="arrow"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We blend creativity with strategy to design user-focused, visually captivating websites that
+                            elevate your brand identity.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>⚙ Custom Web Development</span>
+                        <i class="arrow"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>From no-code builds to fully customized systems, SynoraSol develops solutions tailored
+                            precisely to your goals and target audience.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>🚀 SEO & Performance Optimization</span>
+                        <i class="arrow"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Every website we craft is optimized for lightning speed, responsive design, and SEO
+                            excellence to maximize your online reach.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>🤝 Long-Term Support & Partnership</span>
+                        <i class="arrow"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We go beyond project delivery — offering continuous support, updates, and performance
+                            tracking to ensure your success.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>🎯 Data-Driven Marketing Integration</span>
+                        <i class="arrow"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Our web solutions are built to align with marketing, analytics, and paid campaigns — driving
+                            measurable, data-backed growth.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Development Process Section -->
+    <section class="webpage-section">
+        <div class="webpage-section-bg"></div>
+        <div class="container">
+            <div class="webpage-content">
+                <h2 class="webpage-section-title">Our Development Process</h2>
+                <p class="webpage-text">A structured, transparent approach that ensures quality, efficiency, and
+                    successful project delivery every time.</p>
+
+                <div class="webpage-process-steps">
+                    <div class="webpage-process-step fade-in">
+                        <div class="webpage-step-number">01</div>
+                        <h3 class="webpage-step-title">Discovery & Planning</h3>
+                        <p class="webpage-step-desc">Deep dive into your requirements, goals, and technical
+                            specifications to create a comprehensive project roadmap.</p>
+                    </div>
+
+                    <div class="webpage-process-step fade-in">
+                        <div class="webpage-step-number">02</div>
+                        <h3 class="webpage-step-title">Design & Prototyping</h3>
+                        <p class="webpage-step-desc">Create wireframes, mockups, and interactive prototypes to visualize
+                            the final product before development begins.</p>
+                    </div>
+
+                    <div class="webpage-process-step fade-in">
+                        <div class="webpage-step-number">03</div>
+                        <h3 class="webpage-step-title">Development & Testing</h3>
+                        <p class="webpage-step-desc">Agile development with continuous testing, code reviews, and
+                            quality assurance at every stage.</p>
+                    </div>
+
+                    <div class="webpage-process-step fade-in">
+                        <div class="webpage-step-number">04</div>
+                        <h3 class="webpage-step-title">Deployment & Support</h3>
+                        <p class="webpage-step-desc">Seamless deployment, ongoing maintenance, and technical support to
+                            ensure long-term success.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Showcase Section -->
+    <section class="webpage-section webpage-portfolio">
+        <div class="container">
+            <div class="webpage-content">
+                <h2 class="webpage-section-title">Our Website Development Portfolio</h2>
+                <p class="webpage-text">
+                    A showcase of modern, user-centric web solutions — combining aesthetics, performance, and
+                    innovation.
+                </p>
+
+                <div class="webpage-portfolio-grid">
+                    <!-- Card 1 -->
+                    <div class="webpage-portfolio-card fade-in">
+                        <div class="webpage-portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1612831662375-295c1003d3ca?auto=format&fit=crop&w=1000&q=80"
+                                alt="Luxury E-commerce" />
+                            <span class="webpage-portfolio-category">E-commerce</span>
+                            <div class="webpage-portfolio-overlay">
+                                <a href="#" class="portfolio-btn">View Project</a>
+                            </div>
+                        </div>
+                        <div class="webpage-portfolio-content">
+                            <h3 class="webpage-portfolio-title">LuxeFashion Store</h3>
+                            <p class="webpage-portfolio-desc">
+                                A sleek, conversion-optimized e-commerce platform with intuitive navigation and custom
+                                checkout.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="webpage-portfolio-card fade-in">
+                        <div class="webpage-portfolio-image">
+                            <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=1000&q=80"
+                                alt="SaaS Dashboard" />
+                            <span class="webpage-portfolio-category">SaaS Platform</span>
+                            <div class="webpage-portfolio-overlay">
+                                <a href="#" class="portfolio-btn">View Project</a>
+                            </div>
+                        </div>
+                        <div class="webpage-portfolio-content">
+                            <h3 class="webpage-portfolio-title">ProjectFlow SaaS</h3>
+                            <p class="webpage-portfolio-desc">
+                                Real-time project management dashboard built with React and Node.js for smooth
+                                collaboration.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-container">
+            <!-- Left Content -->
+            <div class="cta-left">
+                <span class="tag">Ready to Build?</span>
+                <h2>Let's Create Your Digital Masterpiece</h2>
+                <p>
+                    Partner with us to transform your ideas into powerful, scalable web solutions that drive business
+                    growth and deliver exceptional user experiences.
+                </p>
+                <a href="contact.html" class="cta-button">
+                    Start Your Project <span>➜</span>
+                </a>
+            </div>
+
+            <!-- Right Features -->
+            <div class="cta-right">
+                <div class="feature">
+                    <span class="dot"></span>
+                    <div>
+                        <h4>Expert Development Team</h4>
+                        <p>Seasoned developers with expertise across modern technologies and frameworks.</p>
+                    </div>
+                </div>
+
+                <div class="feature">
+                    <span class="dot"></span>
+                    <div>
+                        <h4>Quality Assurance</h4>
+                        <p>Rigorous testing and code reviews to ensure bug-free, high-performance solutions.</p>
+                    </div>
+                </div>
+
+                <div class="feature">
+                    <span class="dot"></span>
+                    <div>
+                        <h4>Scalable Architecture</h4>
+                        <p>Future-proof solutions designed to grow with your business and user base.</p>
+                    </div>
+                </div>
+
+                <div class="feature">
+                    <span class="dot"></span>
+                    <div>
+                        <h4>Ongoing Support</h4>
+                        <p>Continuous maintenance, updates, and technical support for long-term success.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+
+            <!-- Newsletter -->
+            <div class="newsletter">
+                <div class="newsletter-content">
+                    <h3>Stay Updated</h3>
+                    <p>Subscribe to our newsletter for the latest updates and insights.</p>
+                </div>
+                <form class="newsletter-form">
+                    <input type="email" class="newsletter-input" placeholder="Your email address" required>
+                    <button type="submit" class="newsletter-button">Subscribe</button>
+                </form>
+            </div>
+
+            <div class="footer-main">
+                <!-- Brand -->
+                <div class="footer-brand">
+                    <div class="footer-brand">
+                        <div class="logo">
+                            <img src="./img/logo-01.png" alt="SynoraSol Logo">
+                        </div>
+                        <p>Transforming digital presence through innovative solutions that drive growth and deliver
+                            measurable results.</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Links -->
+                    <div class="footer-links-group">
+                        <div class="footer-column">
+                            <h4>Services</h4>
+                             <ul>
+                                <li><a href="website-development-service.html">Web Development</a></li>
+                                <li><a href="paid-advertising-service.html">Paid Advertising</a></li>
+                                <li><a href="website-design-service.html">Web Design</a></li>
+                                <li><a href="seo-sem-service.html">SEO & SEM</a></li>
+                                <li><a href="social-media-marketing-service.html">Social Media Marketing</a></li>
+                                <li><a href="graphic-design-service.html">Graphic Design</a></li>
+                                <li><a href="video-editing-service.html">Video Editing</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-column">
+                            <h4>Company</h4>
+                            <ul>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Our Team</a></li>
+                                <li><a href="#">Careers</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-column">
+                            <h4>Contact</h4>
+                            <ul>
+                                <li><a href="#">info@synorasol.com</a></li>
+                                <li><a href="#">+1 (555) 123-4567</a></li>
+                                <li><a href="#">123 Tech Street</a></li>
+                                <li><a href="#">Digital City, DC 10101</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer bottom -->
+                <div class="footer-bottom">
+                    <p>© Synorasol 2025 — All Rights Reserved</p>
+                    <button class="scroll-top" id="scrollTop"><i class="fas fa-chevron-up"></i></button>
+                </div>
+            </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main6.js"></script>
+
+</body>
+
+</html>

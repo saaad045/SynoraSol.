@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seo / Sem Services | Synorasol</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="./css/hero.css">
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-bg">
+            <div class="floating-orb orb-1"></div>
+            <div class="floating-orb orb-2"></div>
+            <div class="floating-orb orb-3"></div>
+            <div class="particles" id="particles"></div>
+        </div>
+        <div class="preloader-content">
+            <div class="preloader-logo">SYNORASOL.</div>
+            <div class="loading-text">LOADING DIGITAL EXPERIENCE</div>
+            <div class="progress-container">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+            <div class="preloader-spinner"></div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <div class="nav-container">
+        <nav>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </div>
+            <div class="logo">
+                <img src="./img/logo-01.png" alt="SynoraSol Logo" />
+            </div>
+
+            <div class="hamburger-wrapper">
+                <div class="hamburger" id="hamburger"></div>
+                <!-- Circular Text -->
+                <div class="menu-circle-text" id="menuTextCircle">
+                </div>
+            </div>
+        </nav>
+
+        <!-- Fullscreen Menu Overlay -->
+        <div class="menu-overlay" id="menuOverlay">
+            <div class="close-menu" id="closeMenu">
+            </div>
+            <ul class="menu-links">
+                <li><a href="index.html" data-number=>Home</a></li>
+                <li><a href="about-us.html" data-number=>About</a></li>
+                <li><a href="services.html" data-number=>Services</a></li>
+                <li><a href="portfolio.html" data-number=>Portfolio</a></li>
+                <li><a href="testimonial.html" data-number=>Testimonials</a></li>
+                <li><a href="contact.html" data-number=>Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Web Development Page Hero -->
+    <section class="hero" id="home">
+        <div class="hero-bg"></div>
+
+        <!-- Gradient orbs -->
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+
+        <!-- Floating particles -->
+        <div class="particles" id="particles"></div>
+
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="layer solid">Seo / Sem</span>
+                <span class="layer outline">Services
+                </span>
+            </h1>
+
+            <p class="hero-subtitle">
+                Our SEO/SEM experts specialize in boosting your online visibility through data-driven strategies that
+                increase traffic, enhance rankings, and drive measurable business growth.
+            </p>
+
+            <a href="contact.html" class="hero-btn">Let's Collaborate</a>
+        </div>
+
+        <div class="scroll-indicator" id="scrollIndicator">
+            <div class="mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <span class="scroll-text">Scroll</span>
+        </div>
+    </section>
+
+
+    <!-- Seo Services Section -->
+    <section class="webpage-section webpage-services">
+  <div class="webpage-section-bg"></div>
+  <div class="container">
+    <div class="webpage-content">
+      <h2 class="webpage-section-title">SEO & SEM Services</h2>
+      <p class="webpage-text">
+        Maximize your online visibility and ROI with SynoraSol’s expert SEO and SEM strategies — crafted to attract,
+        engage, and convert your target audience.
+      </p>
+
+      <div class="webpage-cards">
+        <!-- Search Engine Optimization -->
+        <div class="webpage-card fade-in">
+          <div class="webpage-card-icon"><i class="fas fa-search"></i></div>
+          <h3 class="webpage-card-title">Search Engine Optimization (SEO)</h3>
+          <p class="webpage-card-text">
+            Improve your rankings and organic reach with data-driven SEO strategies built for sustainable growth.
+          </p>
+          <ul class="webpage-card-features">
+            <li>On-Page & Technical SEO</li>
+            <li>Keyword Research & Targeting</li>
+            <li>Content Optimization</li>
+            <li>Backlink Strategy</li>
+            <li>Performance Tracking</li>
+          </ul>
+        </div>
+
+        <!-- Search Engine Marketing -->
+        <div class="webpage-card fade-in">
+          <div class="webpage-card-icon"><i class="fas fa-bullhorn"></i></div>
+          <h3 class="webpage-card-title">Search Engine Marketing (SEM)</h3>
+          <p class="webpage-card-text">
+            Run high-performing ad campaigns that deliver measurable results and maximize your return on ad spend (ROAS).
+          </p>
+          <ul class="webpage-card-features">
+            <li>Google Ads Campaigns</li>
+            <li>Pay-Per-Click (PPC) Strategy</li>
+            <li>Display & Retargeting Ads</li>
+            <li>Ad Copy Optimization</li>
+            <li>Conversion Tracking</li>
+          </ul>
+        </div>
+
+        <!-- Local SEO -->
+        <div class="webpage-card fade-in">
+          <div class="webpage-card-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <h3 class="webpage-card-title">Local SEO</h3>
+          <p class="webpage-card-text">
+            Dominate local search results and bring more customers to your doorstep through hyper-targeted optimization.
+          </p>
+          <ul class="webpage-card-features">
+            <li>Google My Business Setup</li>
+            <li>Local Keyword Targeting</li>
+            <li>Review & Reputation Management</li>
+            <li>Citation Building</li>
+            <li>Geo-Targeted Campaigns</li>
+          </ul>
+        </div>
+
+        <!-- Content Marketing -->
+        <div class="webpage-card fade-in">
+          <div class="webpage-card-icon"><i class="fas fa-pen-nib"></i></div>
+          <h3 class="webpage-card-title">Content Marketing</h3>
+          <p class="webpage-card-text">
+            Engage your audience and build authority through SEO-optimized, valuable, and compelling content.
+          </p>
+          <ul class="webpage-card-features">
+            <li>Blog Strategy & Writing</li>
+            <li>Landing Page Copy</li>
+            <li>Content Calendars</li>
+            <li>Link-Building Content</li>
+            <li>Performance Analytics</li>
+          </ul>
+        </div>
+
+        <!-- Analytics & Reporting -->
+        <div class="webpage-card fade-in">
+          <div class="webpage-card-icon"><i class="fas fa-chart-line"></i></div>
+          <h3 class="webpage-card-title">Analytics & Performance Tracking</h3>
+          <p class="webpage-card-text">
+            Measure every click, impression, and conversion to refine your strategy and improve results.
+          </p>
+          <ul class="webpage-card-features">
+            <li>Google Analytics 4 (GA4)</li>
+            <li>Conversion Rate Optimization</li>
+            <li>SEO/SEM Dashboards</li>
+            <li>Traffic Source Analysis</li>
+            <li>ROI Reports</li>
+          </ul>
+        </div>
+
+        <!-- Ongoing Optimization -->
+        <div class="webpage-card fade-in">
+          <div class="webpage-card-icon"><i class="fas fa-sync-alt"></i></div>
+          <h3 class="webpage-card-title">Ongoing Optimization</h3>
+          <p class="webpage-card-text">
+            Continuous monitoring, A/B testing, and campaign refinements to keep your growth steady and impactful.
+          </p>
+          <ul class="webpage-card-features">
+            <li>A/B Testing & Experiments</li>
+            <li>Ad Performance Review</li>
+            <li>Landing Page Optimization</li>
+            <li>SEO Health Checks</li>
+            <li>Monthly Strategy Updates</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--tool section-->
+<section class="webpage-section webpage-tools">
+  <div class="container">
+    <div class="webpage-content">
+      <h2 class="webpage-section-title">Tools & Technologies We Use</h2>
+      <p class="webpage-text">
+        Our SEO-SEM experts harness the power of advanced digital tools to analyze performance, refine campaigns, and deliver real results.
+      </p>
+
+      <div class="tools-showcase">
+        <div class="tool-card glow">
+          <div class="tool-icon">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Google_Ads_logo.svg" alt="Google Ads" />
+          </div>
+          <h3>Google Ads</h3>
+          <p>Run and optimize targeted ad campaigns that convert with precision.</p>
+        </div>
+
+        <div class="tool-card glow">
+          <div class="tool-icon">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Google_Analytics_Logo.png" alt="Google Analytics" />
+          </div>
+          <h3>Google Analytics</h3>
+          <p>Track user behavior, engagement, and campaign ROI with data-driven clarity.</p>
+        </div>
+
+        <div class="tool-card glow">
+          <div class="tool-icon">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/SEMrush_logo.svg" alt="SEMrush" />
+          </div>
+          <h3>SEMrush</h3>
+          <p>Uncover SEO opportunities, analyze competitors, and optimize performance.</p>
+        </div>
+
+        <div class="tool-card glow">
+          <div class="tool-icon">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Ahrefs_logo.svg" alt="Ahrefs" />
+          </div>
+          <h3>Ahrefs</h3>
+          <p>Advanced backlink and keyword tracking to boost domain authority.</p>
+        </div>
+
+        <div class="tool-card glow">
+          <div class="tool-icon">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Google_Tag_Manager_logo.svg" alt="GTM" />
+          </div>
+          <h3>Google Tag Manager</h3>
+          <p>Streamline tracking, analytics, and remarketing through smart tag management.</p>
+        </div>
+
+        <div class="tool-card glow">
+          <div class="tool-icon">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/f/f7/Facebook_logo_new.svg" alt="Meta Ads" />
+          </div>
+          <h3>Meta Ads</h3>
+          <p>Strategic paid campaigns across Facebook and Instagram for engagement and sales.</p>
+        </div>
+
+        <div class="tool-card glow">
+          <div class="tool-icon">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/77/YouTube_social_white_square_%282017%29.svg" alt="YouTube Ads" />
+          </div>
+          <h3>YouTube Ads</h3>
+          <p>Video campaigns designed to captivate, convert, and strengthen your brand presence.</p>
+        </div>
+
+        <div class="tool-card glow">
+          <div class="tool-icon">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/11/Screaming_Frog_SEO_Spider_logo.png" alt="Screaming Frog" />
+          </div>
+          <h3>Screaming Frog</h3>
+          <p>Powerful technical SEO audits to ensure optimal crawlability and performance.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- why choose  Section -->
+    <section class="why-choose-faq">
+  <div class="faq-container">
+    <h2 class="webpage-section-title">Why Choose SynoraSol for SEO & SEM Services</h2>
+    <p class="webpage-text">
+      In the ever-evolving digital world, visibility is everything. SynoraSol ensures your brand not only ranks higher
+      but connects with the right audience through precision-targeted SEO and SEM strategies.
+    </p>
+
+    <div class="faq-wrapper">
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>🔍 Data-Driven SEO Strategy</span>
+          <i class="arrow"></i>
+        </button>
+        <div class="faq-answer">
+          <p>
+            We craft SEO strategies backed by analytics, keyword research, and competitor insights — ensuring your
+            website dominates search results organically.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>💰 High-ROI SEM Campaigns</span>
+          <i class="arrow"></i>
+        </button>
+        <div class="faq-answer">
+          <p>
+            From Google Ads to remarketing, our SEM experts design ad campaigns that attract qualified leads and deliver
+            measurable ROI for your business.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>⚙ Technical & On-Page Optimization</span>
+          <i class="arrow"></i>
+        </button>
+        <div class="faq-answer">
+          <p>
+            Our team ensures your site structure, speed, and metadata are perfectly tuned for search engine algorithms
+            — boosting rankings and user experience alike.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>📈 Continuous Performance Tracking</span>
+          <i class="arrow"></i>
+        </button>
+        <div class="faq-answer">
+          <p>
+            We don’t just launch campaigns — we monitor, test, and refine them with real-time analytics and reports to
+            keep performance at its peak.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>🤝 Transparent Partnership & Support</span>
+          <i class="arrow"></i>
+        </button>
+        <div class="faq-answer">
+          <p>
+            We believe in complete transparency — offering detailed reports, strategic insights, and ongoing support to
+            ensure your long-term digital success.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- Development Process Section -->
+    <section class="webpage-section">
+    <div class="webpage-section-bg"></div>
+    <div class="container">
+        <div class="webpage-content">
+            <h2 class="webpage-section-title">Our SEO & SEM Process</h2>
+            <p class="webpage-text">
+                A data-driven approach designed to boost visibility, drive qualified traffic, and maximize your ROI through intelligent search marketing strategies.
+            </p>
+
+            <div class="webpage-process-steps">
+                <div class="webpage-process-step fade-in">
+                    <div class="webpage-step-number">01</div>
+                    <h3 class="webpage-step-title">Research & Strategy</h3>
+                    <p class="webpage-step-desc">
+                        We begin with in-depth keyword research, competitor analysis, and market insights to create a tailored SEO and SEM roadmap that aligns with your business goals.
+                    </p>
+                </div>
+
+                <div class="webpage-process-step fade-in">
+                    <div class="webpage-step-number">02</div>
+                    <h3 class="webpage-step-title">On-Page & Technical Optimization</h3>
+                    <p class="webpage-step-desc">
+                        From optimizing site speed and metadata to improving content structure and user experience — we make your website search-engine ready and user-focused.
+                    </p>
+                </div>
+
+                <div class="webpage-process-step fade-in">
+                    <div class="webpage-step-number">03</div>
+                    <h3 class="webpage-step-title">Campaign Creation & Execution</h3>
+                    <p class="webpage-step-desc">
+                        Our experts design and manage high-converting Google Ads and social campaigns that attract, engage, and convert the right audience efficiently.
+                    </p>
+                </div>
+
+                <div class="webpage-process-step fade-in">
+                    <div class="webpage-step-number">04</div>
+                    <h3 class="webpage-step-title">Monitoring, Reporting & Growth</h3>
+                    <p class="webpage-step-desc">
+                        Using real-time analytics, we continuously monitor performance, refine strategies, and deliver transparent reports to ensure measurable growth and ROI.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Portfolio Showcase Section -->
+    <section class="webpage-section webpage-portfolio">
+    <div class="container">
+        <div class="webpage-content">
+            <h2 class="webpage-section-title">Our SEO & SEM Success Stories</h2>
+            <p class="webpage-text">
+                Explore how SynoraSol has helped brands grow their online visibility, dominate search results, and achieve measurable ROI through data-driven marketing.
+            </p>
+
+            <div class="webpage-portfolio-grid">
+                <!-- Card 1 -->
+                <div class="webpage-portfolio-card fade-in">
+                    <div class="webpage-portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1605902711622-cfb43c4437b5?auto=format&fit=crop&w=1000&q=80"
+                            alt="E-commerce SEO Growth" />
+                        <span class="webpage-portfolio-category">E-commerce SEO</span>
+                        <div class="webpage-portfolio-overlay">
+                            <a href="#" class="portfolio-btn">View Case Study</a>
+                        </div>
+                    </div>
+                    <div class="webpage-portfolio-content">
+                        <h3 class="webpage-portfolio-title">StyleCart SEO Campaign</h3>
+                        <p class="webpage-portfolio-desc">
+                            Boosted organic traffic by 180% and doubled sales conversions through keyword optimization and content marketing.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="webpage-portfolio-card fade-in">
+                    <div class="webpage-portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1565372918674-0b1d8eb9a1d1?auto=format&fit=crop&w=1000&q=80"
+                            alt="Google Ads Campaign" />
+                        <span class="webpage-portfolio-category">Google Ads (SEM)</span>
+                        <div class="webpage-portfolio-overlay">
+                            <a href="#" class="portfolio-btn">View Campaign</a>
+                        </div>
+                    </div>
+                    <div class="webpage-portfolio-content">
+                        <h3 class="webpage-portfolio-title">PrimeTech SEM Strategy</h3>
+                        <p class="webpage-portfolio-desc">
+                            Achieved 4x ROI with a targeted PPC campaign, smart bidding strategies, and A/B tested ad creatives.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="webpage-portfolio-card fade-in">
+                    <div class="webpage-portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1590608897129-79da98d15972?auto=format&fit=crop&w=1000&q=80"
+                            alt="Local SEO Project" />
+                        <span class="webpage-portfolio-category">Local SEO</span>
+                        <div class="webpage-portfolio-overlay">
+                            <a href="#" class="portfolio-btn">View Project</a>
+                        </div>
+                    </div>
+                    <div class="webpage-portfolio-content">
+                        <h3 class="webpage-portfolio-title">CityDental Local SEO</h3>
+                        <p class="webpage-portfolio-desc">
+                            Ranked #1 on Google Maps in under 3 months through optimized GMB listings, backlinks, and local citations.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-container">
+            <!-- Left Content -->
+            <div class="cta-left">
+                <span class="tag">Ready to Build?</span>
+                <h2>Let's Create Your Digital Masterpiece</h2>
+                <p>
+                    Partner with us to transform your ideas into powerful, scalable web solutions that drive business
+                    growth and deliver exceptional user experiences.
+                </p>
+                <a href="contact.html" class="cta-button">
+                    Start Your Project <span>➜</span>
+                </a>
+            </div>
+
+            <!-- Right Features -->
+            <div class="cta-right">
+                <div class="feature">
+                    <span class="dot"></span>
+                    <div>
+                        <h4>Expert Development Team</h4>
+                        <p>Seasoned developers with expertise across modern technologies and frameworks.</p>
+                    </div>
+                </div>
+
+                <div class="feature">
+                    <span class="dot"></span>
+                    <div>
+                        <h4>Quality Assurance</h4>
+                        <p>Rigorous testing and code reviews to ensure bug-free, high-performance solutions.</p>
+                    </div>
+                </div>
+
+                <div class="feature">
+                    <span class="dot"></span>
+                    <div>
+                        <h4>Scalable Architecture</h4>
+                        <p>Future-proof solutions designed to grow with your business and user base.</p>
+                    </div>
+                </div>
+
+                <div class="feature">
+                    <span class="dot"></span>
+                    <div>
+                        <h4>Ongoing Support</h4>
+                        <p>Continuous maintenance, updates, and technical support for long-term success.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+    <div class="footer-container">
+
+      <!-- Newsletter -->
+      <div class="newsletter">
+        <div class="newsletter-content">
+          <h3>Stay Updated</h3>
+          <p>Subscribe to our newsletter for the latest updates and insights.</p>
+        </div>
+        <form class="newsletter-form">
+          <input type="email" class="newsletter-input" placeholder="Your email address" required>
+          <button type="submit" class="newsletter-button">Subscribe</button>
+        </form>
+      </div>
+
+      <div class="footer-main">
+        <!-- Brand -->
+        <div class="footer-brand">
+          <div class="logo">
+            <img src="./img/logo-01.png" alt="SynoraSol Logo">
+          </div>
+          <p>Transforming digital presence through innovative solutions that drive growth and deliver
+            measurable results.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+          </div>
+        </div>
+
+        <!-- Links -->
+        <div class="footer-links-group">
+          <div class="footer-column">
+            <h4>Services</h4>
+             <ul>
+                                <li><a href="website-development-service.html">Web Development</a></li>
+                                <li><a href="paid-advertising-service.html">Paid Advertising</a></li>
+                                <li><a href="website-design-service.html">Web Design</a></li>
+                                <li><a href="seo-sem-service.html">SEO & SEM</a></li>
+                                <li><a href="social-media-marketing-service.html">Social Media Marketing</a></li>
+                                <li><a href="graphic-design-service.html">Graphic Design</a></li>
+                                <li><a href="video-editing-service.html">Video Editing</a></li>
+                            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Our Team</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4>Contact</h4>
+            <ul>
+              <li><a href="#">info@synorasol.com</a></li>
+              <li><a href="#">+1 (555) 123-4567</a></li>
+              <li><a href="#">123 Tech Street</a></li>
+              <li><a href="#">Digital City, DC 10101</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer bottom -->
+      <div class="footer-bottom">
+        <p>© Synorasol 2025 — All Rights Reserved</p>
+        <button class="scroll-top" id="scrollTop"><i class="fas fa-chevron-up"></i></button>
+      </div>
+    </div>
+  </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main6.js"></script>
+
+</body>
+
+</html>

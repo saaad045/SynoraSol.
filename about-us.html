@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | SynoraSol</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="./css/hero.css">
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-bg">
+            <div class="floating-orb orb-1"></div>
+            <div class="floating-orb orb-2"></div>
+            <div class="floating-orb orb-3"></div>
+            <div class="particles" id="particles"></div>
+        </div>
+        <div class="preloader-content">
+            <div class="preloader-logo">SYNORASOL.</div>
+            <div class="loading-text">LOADING DIGITAL EXPERIENCE</div>
+            <div class="progress-container">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+            <div class="preloader-spinner"></div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <div class="nav-container">
+        <nav>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </div>
+            <div class="logo">
+                <img src="./img/logo-01.png" alt="SynoraSol Logo" />
+            </div>
+
+            <div class="hamburger-wrapper">
+                <div class="hamburger" id="hamburger"></div>
+                <!-- Circular Text -->
+                <div class="menu-circle-text" id="menuTextCircle">
+                </div>
+            </div>
+        </nav>
+
+        <!-- Fullscreen Menu Overlay -->
+        <div class="menu-overlay" id="menuOverlay">
+            <div class="close-menu" id="closeMenu">
+            </div>
+             <ul class="menu-links">
+                <li><a href="index.html" data-number=>Home</a></li>
+                <li><a href="about-us.html" data-number=>About</a></li>
+                <li><a href="services.html" data-number=>Services</a></li>
+                <li><a href="portfolio.html" data-number=>Portfolio</a></li>
+                <li><a href="testimonial.html" data-number=>Testimonials</a></li>
+                <li><a href="contact.html" data-number=>Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- About Page Hero -->
+    <section class="hero" id="home">
+        <div class="hero-bg"></div>
+
+        <!-- Gradient orbs -->
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+
+        <!-- Floating particles -->
+        <div class="particles" id="particles"></div>
+
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="layer solid">Story</span>
+                <span class="layer solid">Behind</span>
+                <span class="layer outline">SynoraSol.</span>
+            </h1>
+
+            <p class="hero-subtitle">
+                Discover the passion, innovation, and dedication behind Synorasol - where digital excellence meets
+                creative vision. </p>
+
+            <a href="contact.html" class="hero-btn">Let's Collaborate</a>
+        </div>
+
+        <div class="scroll-indicator" id="scrollIndicator">
+            <div class="mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <span class="scroll-text">Scroll</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="aboutpage-section">
+  <div class="aboutpage-section-bg"></div>
+  <div class="container">
+    <div class="aboutpage-content fade-in text-center">
+      <h2 class="aboutpage-heading">About SynoraSol.</h2>
+      <p class="aboutpage-text mx-auto" style="max-width: 850px;">
+        Founded in 2025, <strong>Synorasol</strong> began as a small team of digital visionaries with one mission —
+        to redefine how brands grow, connect, and thrive in the digital world. From a modest workspace to a
+        full-fledged global agency, our journey has been powered by passion, innovation, and an unwavering
+        commitment to excellence.
+      </p>
+      <p class="aboutpage-text mx-auto" style="max-width: 850px;">
+        At Synorasol, we don’t just build websites — we craft digital experiences that inspire, engage, and deliver
+        measurable results. Every project we take is a collaboration, a fusion of strategy, design, and technology
+        that propels businesses toward lasting success.
+      </p>
+    </div>
+
+    <div class="row mt-5">
+      <div class="col-md-6 mb-4">
+        <div class="aboutpage-card fade-in">
+          <div class="aboutpage-card-icon">
+            <i class="fas fa-bullseye"></i>
+          </div>
+          <h3 class="aboutpage-card-title">Our Mission</h3>
+          <p class="aboutpage-card-text">
+            To empower businesses with cutting-edge digital solutions that drive growth, elevate brand identity,
+            and create lasting impact in an ever-evolving online world.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4">
+        <div class="aboutpage-card fade-in">
+          <div class="aboutpage-card-icon">
+            <i class="fas fa-eye"></i>
+          </div>
+          <h3 class="aboutpage-card-title">Our Vision</h3>
+          <p class="aboutpage-card-text">
+            To become a global leader in digital innovation — the go-to partner for forward-thinking brands seeking
+            creativity, excellence, and measurable success.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-4">
+      <div class="col-md-4 mb-4">
+        <div class="aboutpage-card fade-in">
+          <div class="aboutpage-card-icon">
+            <i class="fas fa-code"></i>
+          </div>
+          <h3 class="aboutpage-card-title">Web Development</h3>
+          <p class="aboutpage-card-text">
+            We design and build responsive, high-performing websites tailored to your brand’s identity and goals —
+            ensuring flawless functionality and engaging user experiences.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="aboutpage-card fade-in">
+          <div class="aboutpage-card-icon">
+            <i class="fas fa-paint-brush"></i>
+          </div>
+          <h3 class="aboutpage-card-title">Creative Design</h3>
+          <p class="aboutpage-card-text">
+            From stunning visuals to intuitive layouts, our design philosophy blends creativity with clarity —
+            making your brand stand out with elegance and impact.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="aboutpage-card fade-in">
+          <div class="aboutpage-card-icon">
+            <i class="fas fa-bullhorn"></i>
+          </div>
+          <h3 class="aboutpage-card-title">Digital Marketing</h3>
+          <p class="aboutpage-card-text">
+            Through SEO, paid ads, and social media strategies, we amplify your digital presence, turning engagement
+            into loyal customers and measurable business growth.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-4">
+      <div class="col-md-4 mb-4">
+        <div class="aboutpage-card fade-in">
+          <div class="aboutpage-card-icon">
+            <i class="fas fa-search-dollar"></i>
+          </div>
+          <h3 class="aboutpage-card-title">SEO & Analytics</h3>
+          <p class="aboutpage-card-text">
+            We use advanced SEO techniques and data-driven insights to maximize your reach, visibility, and ranking
+            across search platforms — delivering sustainable results.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="aboutpage-card fade-in">
+          <div class="aboutpage-card-icon">
+            <i class="fas fa-video"></i>
+          </div>
+          <h3 class="aboutpage-card-title">Video & Media</h3>
+          <p class="aboutpage-card-text">
+            Our video and content experts create compelling visual stories that communicate your message with
+            authenticity and creative brilliance.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="aboutpage-card fade-in">
+          <div class="aboutpage-card-icon">
+            <i class="fas fa-heart"></i>
+          </div>
+          <h3 class="aboutpage-card-title">Our Values</h3>
+          <p class="aboutpage-card-text">
+            Innovation, transparency, and excellence define every project we undertake. We believe in long-term
+            partnerships built on trust, creativity, and results.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Portfolio Section -->
+    <section class="portfolio1-section">
+        <div class="container">
+            <p class="section-subtitle">Creatives Catalogue</p>
+            <h2 class="section-title">View Our Portfolio & More!</h2>
+
+            <div class="portfolio1-slider">
+                <div class="portfolio1-track">
+                    <!-- Portfolio Items -->
+                    <div class="portfolio1-item">
+                        <img src="https://i.pinimg.com/1200x/45/c0/f2/45c0f249ece7248c4d562b51a0639822.jpg"
+                            alt="Portfolio 1">
+                    </div>
+                    <div class="portfolio1-item">
+                        <img src="https://i.pinimg.com/1200x/00/20/24/002024d7eb7c8babc9437b2ccdd712d2.jpg"
+                            alt="Portfolio 2">
+                    </div>
+                    <div class="portfolio1-item">
+                        <img src="https://i.pinimg.com/1200x/c0/dd/3d/c0dd3ddb63eae4bfa614a9543c434fa4.jpg"
+                            alt="Portfolio 3">
+                    </div>
+                    <div class="portfolio1-item">
+                        <img src="https://i.pinimg.com/736x/b7/17/de/b717de8bbbcb46b3d7af834672c72a84.jpg"
+                            alt="Portfolio 4">
+                    </div>
+                    <div class="portfolio1-item">
+                        <img src="https://i.pinimg.com/1200x/41/58/91/41589129e1eba36b5452de2621da8b03.jpg"
+                            alt="Portfolio 5">
+                    </div>
+
+                    <!-- Duplicate for infinite loop -->
+                    <div class="portfolio1-item">
+                        <img src="https://i.pinimg.com/1200x/45/c0/f2/45c0f249ece7248c4d562b51a0639822.jpg"
+                            alt="Portfolio 1">
+                    </div>
+                    <div class="portfolio1-item">
+                        <img src="https://i.pinimg.com/1200x/00/20/24/002024d7eb7c8babc9437b2ccdd712d2.jpg"
+                            alt="Portfolio 2">
+                    </div>
+                    <div class="portfolio1-item">
+                        <img src="https://i.pinimg.com/1200x/c0/dd/3d/c0dd3ddb63eae4bfa614a9543c434fa4.jpg"
+                            alt="Portfolio 3">
+                    </div>
+                    <div class="portfolio1-item">
+                        <img src="https://i.pinimg.com/736x/b7/17/de/b717de8bbbcb46b3d7af834672c72a84.jpg"
+                            alt="Portfolio 4">
+                    </div>
+                    <div class="portfolio1-item">
+                        <img src="https://i.pinimg.com/1200x/41/58/91/41589129e1eba36b5452de2621da8b03.jpg"
+                            alt="Portfolio 5">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Button -->
+            <div class="portfolio1-btn-wrapper">
+                <a href="portfolio.html" class="portfolio1-btn">
+                    View Full Portfolio
+                    <span class="arrow">➜</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section">
+  <div class="container">
+    <div class="section-header text-center">
+      <h2 class="team-heading">
+        Our Awesome Team
+      </h2>
+      <p class="team-subtext">
+        The powerhouse behind Synorasol — blending innovation, creativity, and digital excellence.
+      </p>
+    </div>
+
+    <div class="team-grid">
+      <div class="team-card">
+        <div class="team-image">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=500&q=80" alt="Alex Johnson">
+        </div>
+        <div class="team-info">
+          <h3 class="team-name">Alex Johnson</h3>
+          <p class="team-role">CEO & Founder</p>
+        </div>
+      </div>
+
+      <div class="team-card">
+        <div class="team-image">
+          <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?auto=format&fit=crop&w=500&q=80" alt="Sarah Chen">
+        </div>
+        <div class="team-info">
+          <h3 class="team-name">Sarah Chen</h3>
+          <p class="team-role">Creative Director</p>
+        </div>
+      </div>
+
+      <div class="team-card">
+        <div class="team-image">
+          <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=500&q=80" alt="Marcus Rodriguez">
+        </div>
+        <div class="team-info">
+          <h3 class="team-name">Marcus Rodriguez</h3>
+          <p class="team-role">Technical Lead</p>
+        </div>
+      </div>
+
+      <div class="team-card">
+        <div class="team-image">
+          <img src="https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?auto=format&fit=crop&w=500&q=80" alt="Elena Petrova">
+        </div>
+        <div class="team-info">
+          <h3 class="team-name">Elena Petrova</h3>
+          <p class="team-role">Marketing Strategist</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="partners-section">
+  <div class="container">
+    <div class="partners-header text-center">
+      <h2 class="partners-heading">
+        Partners Who Trusted SynoraSol's Growth Process
+      </h2>
+      <p class="partners-subtext">
+        Our trusted partners and clients who believed in our digital journey and shared success.
+      </p>
+    </div>
+
+    <div class="partners-grid">
+      <div class="partner-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Logo_TV_2015.png" alt="Partner 1"></div>
+      <div class="partner-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Logo_placeholder.png" alt="Partner 2"></div>
+      <div class="partner-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Logo_placeholder.png" alt="Partner 3"></div>
+      <div class="partner-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Logo_placeholder.png" alt="Partner 4"></div>
+      <div class="partner-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Logo_placeholder.png" alt="Partner 5"></div>
+      <div class="partner-logo"><img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Logo_placeholder.png" alt="Partner 6"></div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-container">
+            <!-- Left Content -->
+            <div class="cta-left">
+                <span class="tag">Ready to Transform?</span>
+                <h2>Let's Create Something Amazing Together</h2>
+                <p>
+                    Partner with a results-driven digital marketing agency that combines innovative strategies,
+                    data-driven insights, and a personalized approach to propel your business forward.
+                </p>
+                <a href="contact.html" class="cta-button">
+                    Start Your Project <span>➜</span>
+                </a>
+            </div>
+
+            <!-- Right Features -->
+            <div class="cta-right">
+                <div class="feature">
+                    <span class="dot"></span>
+                    <div>
+                        <h4>Proven Expertise</h4>
+                        <p>Over 250 successful projects delivered across various industries and markets.</p>
+                    </div>
+                </div>
+
+                <div class="feature">
+                    <span class="dot"></span>
+                    <div>
+                        <h4>Dedicated Partnership</h4>
+                        <p>We become an extension of your team, committed to your long-term success.</p>
+                    </div>
+                </div>
+
+                <div class="feature">
+                    <span class="dot"></span>
+                    <div>
+                        <h4>Innovation-Driven</h4>
+                        <p>Always at the forefront of digital trends and technologies.</p>
+                    </div>
+                </div>
+
+                <div class="feature">
+                    <span class="dot"></span>
+                    <div>
+                        <h4>Transparent Process</h4>
+                        <p>Clear communication and regular updates throughout your project journey.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+            <div class="footer-container">
+
+                <!-- Newsletter -->
+                <div class="newsletter">
+                    <div class="newsletter-content">
+                        <h3>Stay Updated</h3>
+                        <p>Subscribe to our newsletter for the latest updates and insights.</p>
+                    </div>
+                    <form class="newsletter-form">
+                        <input type="email" class="newsletter-input" placeholder="Your email address" required>
+                        <button type="submit" class="newsletter-button">Subscribe</button>
+                    </form>
+                </div>
+
+                <div class="footer-main">
+                    <!-- Brand -->
+                    <div class="footer-brand">
+                        <div class="logo">
+                            <img src="./img/logo-01.png" alt="SynoraSol Logo">
+                        </div>
+                        <p>Transforming digital presence through innovative solutions that drive growth and deliver
+                            measurable results.</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Links -->
+                    <div class="footer-links-group">
+                        <div class="footer-column">
+                            <h4>Services</h4>
+                             <ul>
+                                <li><a href="website-development-service.html">Web Development</a></li>
+                                <li><a href="paid-advertising-service.html">Paid Advertising</a></li>
+                                <li><a href="website-design-service.html">Web Design</a></li>
+                                <li><a href="seo-sem-service.html">SEO & SEM</a></li>
+                                <li><a href="social-media-marketing-service.html">Social Media Marketing</a></li>
+                                <li><a href="graphic-design-service.html">Graphic Design</a></li>
+                                <li><a href="video-editing-service.html">Video Editing</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-column">
+                            <h4>Company</h4>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about-us.html">About Us</a></li>
+                                <li><a href="services.html">Services</a></li>
+                                <li><a href="portfolio.html">Portfolio</a></li>
+                                <li><a href="testimonial.html">Testimonials</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-column">
+                            <h4>Contact</h4>
+                            <ul>
+                                <li><a href="#">info@synorasol.com</a></li>
+                                <li><a href="#">+92 3101 908239</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer bottom -->
+                <div class="footer-bottom">
+                    <p>© Synorasol 2025 — All Rights Reserved</p>
+                    <button class="scroll-top" id="scrollTop"><i class="fas fa-chevron-up"></i></button>
+                </div>
+            </div>
+        </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main1.js"></script>
+
+</body>
+
+</html>

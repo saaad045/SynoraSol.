@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials | Synorasol - Premium Digital Marketing Agency</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="./css/hero.css">
+  
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-bg">
+            <div class="floating-orb orb-1"></div>
+            <div class="floating-orb orb-2"></div>
+            <div class="floating-orb orb-3"></div>
+            <div class="particles" id="particles"></div>
+        </div>
+        <div class="preloader-content">
+            <div class="preloader-logo">SYNORASOL.</div>
+            <div class="loading-text">LOADING DIGITAL EXPERIENCE</div>
+            <div class="progress-container">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+            <div class="preloader-spinner"></div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <div class="nav-container">
+        <nav>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </div>
+
+            <div class="logo">
+                <img src="./img/logo-01.png" alt="SynoraSol Logo" />
+            </div>
+
+            <div class="hamburger-wrapper">
+                <div class="hamburger" id="hamburger"></div>
+                <!-- Circular Text -->
+                <div class="menu-circle-text" id="menuTextCircle">
+                </div>
+            </div>
+        </nav>
+
+        <!-- Fullscreen Menu Overlay -->
+        <div class="menu-overlay" id="menuOverlay">
+            <div class="close-menu" id="closeMenu">
+            </div>
+             <ul class="menu-links">
+                <li><a href="index.html" data-number=>Home</a></li>
+                <li><a href="about-us.html" data-number=>About</a></li>
+                <li><a href="services.html" data-number=>Services</a></li>
+                <li><a href="portfolio.html" data-number=>Portfolio</a></li>
+                <li><a href="testimonial.html" data-number=>Testimonials</a></li>
+                <li><a href="contact.html" data-number=>Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Testimonials Page Hero -->
+    <section class="hero" id="home">
+        <div class="hero-bg"></div>
+
+        <!-- Gradient orbs -->
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+
+        <!-- Floating particles -->
+        <div class="particles" id="particles"></div>
+
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="layer solid">Voices That</span>
+                <span class="layer outline">Inspire</span>
+                <span class="layer solid">SynoraSol.</span>
+            </h1>
+
+            <p class="hero-subtitle">
+                Hear from the brands that trusted SynoraSol to elevate their digital journey.
+            </p>
+
+            <a href="contact.html" class="hero-btn">Let’s Collaborate</a>
+        </div>
+
+        <div class="scroll-indicator" id="scrollIndicator">
+            <div class="mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <span class="scroll-text">Scroll</span>
+        </div>
+    </section>
+
+    <!-- Featured Testimonial Section -->
+    <section class="testimonialspage-section testimonialspage-featured">
+        <div class="testimonialspage-section-bg"></div>
+        <div class="container">
+            <div class="testimonialspage-content">
+                <h2 class="testimonialspage-section-title">Featured Success Story</h2>
+                <p class="testimonialspage-text">Our most impactful client transformation that showcases the power of
+                    our strategic approach and creative execution.</p>
+
+                <div class="testimonialpage-featured-card fade-in">
+                    <div class="testimonialpage-featured-quote">"</div>
+                    <p class="testimonialpage-featured-text">
+                        Working with Synorasol was a game-changer for our business. Their team transformed our digital
+                        presence completely, resulting in a 240% increase in online conversions and establishing us as a
+                        market leader in our industry. The attention to detail and strategic thinking they brought to
+                        the table was exceptional.
+                    </p>
+                    <div class="testimonialpage-featured-author">
+                        <div class="testimonialpage-featured-avatar">
+                            <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                                alt="Sarah Johnson">
+                        </div>
+                        <div class="testimonialpage-featured-info">
+                            <h3 class="testimonialpage-featured-name">Sarah Johnson</h3>
+                            <p class="testimonialpage-featured-role">CEO & Founder</p>
+                            <p class="testimonialpage-featured-company">TechInnovate Solutions</p>
+                            <div class="testimonialpage-featured-rating">
+                                <span class="testimonialpage-featured-star">★</span>
+                                <span class="testimonialpage-featured-star">★</span>
+                                <span class="testimonialpage-featured-star">★</span>
+                                <span class="testimonialpage-featured-star">★</span>
+                                <span class="testimonialpage-featured-star">★</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Grid Section -->
+    <section class="testimonialspage-section">
+        <div class="testimonialspage-section-bg"></div>
+        <div class="container">
+            <div class="testimonialspage-content">
+                <h2 class="testimonialspage-section-title">What Our Clients Say</h2>
+                <p class="testimonialspage-text">Real feedback from businesses we've helped transform through our
+                    digital solutions and strategic partnerships.</p>
+
+                <div class="testimonialspage-grid">
+                    <!-- Testimonial 1 -->
+                    <div class="testimonialpage-card fade-in">
+                        <div class="testimonialpage-card-quote">"</div>
+                        <div class="testimonialpage-card-content">
+                            <p class="testimonialpage-card-text">
+                                The website Synorasol built for us not only looks incredible but performs exceptionally
+                                well. Our bounce rate decreased by 60% and we're generating 3x more qualified leads than
+                                before.
+                            </p>
+                            <div class="testimonialpage-card-author">
+                                <div class="testimonialpage-card-avatar">
+                                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                                        alt="Michael Chen">
+                                </div>
+                                <div class="testimonialpage-card-info">
+                                    <h3 class="testimonialpage-card-name">Michael Chen</h3>
+                                    <p class="testimonialpage-card-role">Marketing Director</p>
+                                    <p class="testimonialpage-card-company">GrowthLabs International</p>
+                                    <div class="testimonialpage-card-rating">
+                                        <span class="testimonialpage-card-star">★</span>
+                                        <span class="testimonialpage-card-star">★</span>
+                                        <span class="testimonialpage-card-star">★</span>
+                                        <span class="testimonialpage-card-star">★</span>
+                                        <span class="testimonialpage-card-star">★</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="testimonialpage-card fade-in">
+                        <div class="testimonialpage-card-quote">"</div>
+                        <div class="testimonialpage-card-content">
+                            <p class="testimonialpage-card-text">
+                                Their strategic approach to digital marketing helped us enter new markets and increase
+                                revenue by 180% in just one year. The ROI has been phenomenal.
+                            </p>
+                            <div class="testimonialpage-card-author">
+                                <div class="testimonialpage-card-avatar">
+                                    <img src="https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                                        alt="Elena Rodriguez">
+                                </div>
+                                <div class="testimonialpage-card-info">
+                                    <h3 class="testimonialpage-card-name">Elena Rodriguez</h3>
+                                    <p class="testimonialpage-card-role">Founder & Creative Director</p>
+                                    <p class="testimonialpage-card-company">LuxeBrands Collective</p>
+                                    <div class="testimonialpage-card-rating">
+                                        <span class="testimonialpage-card-star">★</span>
+                                        <span class="testimonialpage-card-star">★</span>
+                                        <span class="testimonialpage-card-star">★</span>
+                                        <span class="testimonialpage-card-star">★</span>
+                                        <span class="testimonialpage-card-star">★</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="testimonialpage-card fade-in">
+                        <div class="testimonialpage-card-quote">"</div>
+                        <div class="testimonialpage-card-content">
+                            <p class="testimonialpage-card-text">
+                                The team's expertise in both design and development is exceptional. They delivered a
+                                seamless e-commerce platform that increased our sales by 150% in the first quarter.
+                            </p>
+                            <div class="testimonialpage-card-author">
+                                <div class="testimonialpage-card-avatar">
+                                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                                        alt="David Park">
+                                </div>
+                                <div class="testimonialpage-card-info">
+                                    <h3 class="testimonialpage-card-name">David Park</h3>
+                                    <p class="testimonialpage-card-role">Operations Manager</p>
+                                    <p class="testimonialpage-card-company">UrbanStyle Retail</p>
+                                    <div class="testimonialpage-card-rating">
+                                        <span class="testimonialpage-card-star">★</span>
+                                        <span class="testimonialpage-card-star">★</span>
+                                        <span class="testimonialpage-card-star">★</span>
+                                        <span class="testimonialpage-card-star">★</span>
+                                        <span class="testimonialpage-card-star">★</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 4 -->
+                    <div class="testimonialpage-card fade-in">
+                        <div class="testimonialpage-card-quote">"</div>
+                        <div class="testimonialpage-card-content">
+                            <p class="testimonialpage-card-text">
+                                From the initial strategy session to the final implementation, the Synorasol team
+                                demonstrated professionalism and creativity that exceeded our expectations.
+                            </p>
+                            <div class="testimonialpage-card-author">
+                                <div class="testimonialpage-card-avatar">
+                                    <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                                        alt="Jennifer Martinez">
+                                </div>
+                                <div class="testimonialpage-card-info">
+                                    <h3 class="testimonialpage-card-name">Jennifer Martinez</h3>
+                                    <p class="testimonialpage-card-role">Brand Manager</p>
+                                    <p class="testimonialpage-card-company">NovaTech Industries</p>
+                                    <div class="testimonialpage-card-rating">
+                                        <span class="testimonialpage-card-star">★</span>
+                                        <span class="testimonialpage-card-star">★</span>
+                                        <span class="testimonialpage-card-star">★</span>
+                                        <span class="testimonialpage-card-star">★</span>
+                                        <span class="testimonialpage-card-star">★</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 5 -->
+                    <div class="testimonialpage-card fade-in">
+                        <div class="testimonialpage-card-quote">"</div>
+                        <div class="testimonialpage-card-content">
+                            <p class="testimonialpage-card-text">
+                                Their data-driven approach to SEO transformed our online visibility. We're now ranking
+                                #1 for all our key terms and the quality of leads has improved dramatically.
+                            </p>
+                            <div class="testimonialpage-card-author">
+                                <div class="testimonialpage-card-avatar">
+                                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                                        alt="James Wilson">
+                                </div>
+                                <div class="testimonialpage-card-info">
+                                    <h3 class="testimonialpage-card-name">James Wilson</h3>
+                                    <p class="testimonialpage-card-role">Digital Marketing Lead</p>
+                                    <p class="testimonialpage-card-company">Finova Solutions</p>
+                                    <div class="testimonialpage-card-rating">
+                                        <span class="testimonialpage-card-star">★</span>
+                                        <span class="testimonialpage-card-star">★</span>
+                                        <span class="testimonialpage-card-star">★</span>
+                                        <span class="testimonialpage-card-star">★</span>
+                                        <span class="testimonialpage-card-star">★</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 6 -->
+                    <div class="testimonialpage-card fade-in">
+                        <div class="testimonialpage-card-quote">"</div>
+                        <div class="testimonialpage-card-content">
+                            <p class="testimonialpage-card-text">
+                                The video content they produced for our campaign went viral, generating over 2 million
+                                views and significantly boosting brand awareness across all platforms.
+                            </p>
+                            <div class="testimonialpage-card-author">
+                                <div class="testimonialpage-card-avatar">
+                                    <img src="https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                                        alt="Sophie Williams">
+                                </div>
+                                <div class="testimonialpage-card-info">
+                                    <h3 class="testimonialpage-card-name">Sophie Williams</h3>
+                                    <p class="testimonialpage-card-role">Content Director</p>
+                                    <p class="testimonialpage-card-company">CreativeFlow Media</p>
+                                    <div class="testimonialpage-card-rating">
+                                        <span class="testimonialpage-card-star">★</span>
+                                        <span class="testimonialpage-card-star">★</span>
+                                        <span class="testimonialpage-card-star">★</span>
+                                        <span class="testimonialpage-card-star">★</span>
+                                        <span class="testimonialpage-card-star">★</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Stats Section -->
+    <section class="testimonialspage-section testimonialspage-stats">
+        <div class="container">
+            <div class="testimonialspage-content">
+                <h2 class="testimonialspage-section-title">Client Success Metrics</h2>
+                <p class="testimonialspage-text">The numbers that demonstrate our commitment to delivering exceptional
+                    results and building lasting client relationships.</p>
+
+                <div class="testimonialspage-stats-grid">
+                    <div class="testimonialpage-stat-card fade-in">
+                        <div class="testimonialpage-stat-icon">
+                            <i class="fas fa-smile"></i>
+                        </div>
+                        <div class="testimonialpage-stat-number">98%</div>
+                        <div class="testimonialpage-stat-label">Client Satisfaction Rate</div>
+                    </div>
+                    <div class="testimonialpage-stat-card fade-in">
+                        <div class="testimonialpage-stat-icon">
+                            <i class="fas fa-sync"></i>
+                        </div>
+                        <div class="testimonialpage-stat-number">85%</div>
+                        <div class="testimonialpage-stat-label">Repeat Business Rate</div>
+                    </div>
+                    <div class="testimonialpage-stat-card fade-in">
+                        <div class="testimonialpage-stat-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <div class="testimonialpage-stat-number">4.9/5</div>
+                        <div class="testimonialpage-stat-label">Average Client Rating</div>
+                    </div>
+                    <div class="testimonialpage-stat-card fade-in">
+                        <div class="testimonialpage-stat-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="testimonialpage-stat-number">24h</div>
+                        <div class="testimonialpage-stat-label">Average Response Time</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-container">
+            <!-- Left Content -->
+            <div class="cta-left">
+                <span class="tag">Join Our Success Stories</span>
+                <h2>Ready to Transform Your Business?</h2>
+                <p>
+                    Become our next success story. Let's work together to achieve exceptional results and take your
+                    digital presence to the next level.
+                </p>
+                <a href="contact.html" class="cta-button">
+                    Start Your Journey <span>➜</span>
+                </a>
+            </div>
+
+            <!-- Right Features -->
+            <div class="cta-right">
+                <div class="feature">
+                    <span class="dot"></span>
+                    <div>
+                        <h4>Proven Results</h4>
+                        <p>Join hundreds of satisfied clients who have achieved remarkable growth with our solutions.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="feature">
+                    <span class="dot"></span>
+                    <div>
+                        <h4>Strategic Partnership</h4>
+                        <p>We become an extension of your team, committed to your long-term success and growth.</p>
+                    </div>
+                </div>
+
+                <div class="feature">
+                    <span class="dot"></span>
+                    <div>
+                        <h4>Transparent Process</h4>
+                        <p>Clear communication and regular updates ensure you're always informed and involved.</p>
+                    </div>
+                </div>
+
+                <div class="feature">
+                    <span class="dot"></span>
+                    <div>
+                        <h4>Ongoing Support</h4>
+                        <p>Continuous optimization and dedicated support to maintain and grow your success.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+
+            <!-- Newsletter -->
+            <div class="newsletter">
+                <div class="newsletter-content">
+                    <h3>Stay Updated</h3>
+                    <p>Subscribe to our newsletter for the latest updates and insights.</p>
+                </div>
+                <form class="newsletter-form">
+                    <input type="email" class="newsletter-input" placeholder="Your email address" required>
+                    <button type="submit" class="newsletter-button">Subscribe</button>
+                </form>
+            </div>
+
+            <div class="footer-main">
+                <!-- Brand -->
+                <div class="footer-brand">
+                        <div class="logo">
+                            <img src="./img/logo-01.png" alt="SynoraSol Logo">
+                        </div>
+                        <p>Transforming digital presence through innovative solutions that drive growth and deliver
+                            measurable results.</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        </div>
+                    </div>
+
+                <!-- Links -->
+                <div class="footer-links-group">
+                    <div class="footer-column">
+                        <h4>Services</h4>
+                         <ul>
+                                <li><a href="website-development-service.html">Web Development</a></li>
+                                <li><a href="paid-advertising-service.html">Paid Advertising</a></li>
+                                <li><a href="website-design-service.html">Web Design</a></li>
+                                <li><a href="seo-sem-service.html">SEO & SEM</a></li>
+                                <li><a href="social-media-marketing-service.html">Social Media Marketing</a></li>
+                                <li><a href="graphic-design-service.html">Graphic Design</a></li>
+                                <li><a href="video-editing-service.html">Video Editing</a></li>
+                            </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about-us.html">About Us</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                            <li><a href="testimonial.html">Testimonials</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4>Contact</h4>
+                        <ul>
+                            <li><a href="#">info@synorasol.com</a></li>
+                            <li><a href="#">+92 3101 908239</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer bottom -->
+            <div class="footer-bottom">
+                <p>© Synorasol 2025 — All Rights Reserved</p>
+                <button class="scroll-top" id="scrollTop"><i class="fas fa-chevron-up"></i></button>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main5.js"></script>
+
+</body>
+
+</html>
